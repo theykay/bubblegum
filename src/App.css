@@ -1,3 +1,11 @@
+/* darkest
+#ff0081
+#ff48a5
+#ff77bc
+#ffaed7
+#ffcae5
+lightest*/
+
 .App {
   text-align: center;
 }
@@ -35,4 +43,34 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+#one {
+  width: 3rem;
+  height: 3rem;
+  background-color: #ff0081;
+}
+
+#two {
+  width: 3rem;
+  height: 3rem;
+  background-color: #ff48a5;  
+}
+
+#three {
+  width: 3rem;
+  height: 3rem;
+  background-color: #ff77bc;  
+}
+
+#four {
+  width: 3rem;
+  height: 3rem;
+  background-color: #ffaed7;  
+}
+
+#five {
+  width: 3rem;
+  height: 3rem;
+  background-color: #ffcae5;
 }
