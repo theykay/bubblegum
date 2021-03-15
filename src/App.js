@@ -1,10 +1,11 @@
+import React from 'react';
 import './App.css';
-import Main from './Pages/Main';
+import AboutMe from './Pages/AboutMe';
 
 const App = () => {
   return (
     <>
-      <Main />
+      <AboutMe />
     </>
   )
 };
