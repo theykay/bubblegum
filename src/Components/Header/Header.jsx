@@ -8,6 +8,9 @@ const Header = () => {
         {/* logo */}
         {/* <Menu /> */}
         {/*  */}
+        <a href="/">About Me</a>
+        <a href="/digital">Web Projects</a>
+        <a href="/handmade">Handmade Projects</a>
       </header>
     </>
   )
