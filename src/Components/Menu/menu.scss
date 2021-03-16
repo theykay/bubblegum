@@ -30,11 +30,14 @@
   li {
     display: none;
     opacity: 0;
+    width: auto;
+    margin-right: auto;
   }
   @for $num from 1 through 3 {
     .dd#{$num} {
       transform-origin: top center;
       animation: slideDown 150ms ($num * 50ms) ease-in-out forwards;
+      background-color: red;
     }
   }
 }
