@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import "./App.css";
+import "./App.scss";
 import AboutMe from "./Pages/AboutMe";
 import Handmade from "./Pages/Handmade";
 import WebDesign from "./Pages/WebDesign";

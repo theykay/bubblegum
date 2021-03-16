@@ -1,5 +1,5 @@
 import React from 'react';
-import './Handmade.css';
+import './Handmade.scss';
 import Header from '../../Components/Header';
 import Footer from '../../Components/Footer';
 
