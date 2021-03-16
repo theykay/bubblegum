@@ -1,14 +1,14 @@
 import React from 'react';
 import './header.scss';
+import Menu from '../Menu';
 
 const Header = () => {
   return (
     <>
       <header>
         {/* logo */}
-        {/* <Menu /> */}
-        {/*  */}
-        <div class="dropdown">
+        <Menu />
+        {/* <div class="dropdown">
           <ul class="dropdown-menu dropdown-menu--animated">
             <li class="dropdown-item-1">
               <a href="/">About Me</a>
@@ -20,7 +20,7 @@ const Header = () => {
               <a href="/handmade">Handmade Projects</a>
             </li>
           </ul>
-        </div>
+        </div> */}
       </header>
     </>
   )
