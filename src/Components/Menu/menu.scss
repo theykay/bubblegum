@@ -56,7 +56,7 @@
 #burger {
   // background-color: $colorLight;
   color: $colorMid;
-  padding: 0.5rem;
+  padding: .75rem;
   &:hover {
     // background-color: $colorMLight;
     color: $colorDark;
@@ -72,14 +72,35 @@
   display: none;
   position: absolute;
   z-index: 1;
+  right: 0;
+  margin-right: 0.5rem;
+  // border: 2px solid $colorLight;
+  // border-top: none;
   li {
     display: block;
+    text-align: right;
+    padding: .25rem;
+    &:hover {
+      background-color: $colorLight;
+    }
   }
+}
+
+.menuLink {
+  text-decoration: none;
+  color: $colorMDark;
+  // &:link {}
+  // &:visited {}
+  &:hover {
+    color: $colorDark;
+  }
+  // &:active {}
 }
 
 #menuSection:hover {
   #menuContent {
-    display: block;
+    display: flex;
+    flex-direction: column;
   }
 }
 
