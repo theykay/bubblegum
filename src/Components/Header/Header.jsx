@@ -5,8 +5,9 @@ import Menu from '../Menu';
 const Header = () => {
   return (
     <>
-      <header>
+      <header id="pageHead">
         {/* logo */}
+        <div>logo</div>
         <Menu />
         {/* <div class="dropdown">
           <ul class="dropdown-menu dropdown-menu--animated">
