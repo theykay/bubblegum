@@ -4,8 +4,8 @@ import './footer.scss';
 const Footer = () => {
   return (
     <>
-      <footer>
-        <p>&#169;Kay Murray</p>
+      <footer id="pageFoot">
+        <p id="pageFootContent">&#169;Kay Murray</p>
       </footer>
     </>
   )
