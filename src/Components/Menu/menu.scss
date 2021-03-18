@@ -1,5 +1,6 @@
 @import '../../styles/partials/colors';
 @import '../../styles/partials/screens';
+@import '../../styles/partials/fonts';
 
 // .dd-trigger {
 //   padding: .5rem;
@@ -57,6 +58,8 @@
   // background-color: $colorLight;
   color: $colorMid;
   padding: .75rem;
+  width: 1.5rem;
+  height: 1.5rem;
   &:hover {
     // background-color: $colorMLight;
     color: $colorDark;
@@ -83,16 +86,6 @@
   position: absolute;
   z-index: 1;
   right: 0;
-  // li {
-  //   display: flex;
-  //   // display: block;
-  //   justify-content: flex-end;
-  //   text-align: right;
-  //   padding: .25rem;
-  //   &:hover {
-  //     background-color: $colorLight;
-  //   }
-  // }
   @include xs {
     display: flex;
     width: 100vw;
@@ -131,6 +124,8 @@
 .menuLink {
   text-decoration: none;
   color: $colorMDark;
+  font-family: $fontContent;
+  font-weight: 500;
   // &:link {}
   // &:visited {}
   &:hover {
