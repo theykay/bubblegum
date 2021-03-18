@@ -11,6 +11,22 @@
   font-family: $fontFancy;
   font-size: 3rem;
   color: $colorMid;
+  padding: 1rem;
+  @include xs {
+    flex-direction: column;
+  }
+  @include sm {
+    flex-direction: row;
+  }
+}
+
+#icon {
+  @include xs {
+    padding-bottom: .25rem;
+  }
+  @include sm {
+    padding-right: 1rem;
+  }
 }
 
 #pageHead {
@@ -19,38 +35,11 @@
   align-items: center;
   @include xs {
     flex-direction: column;
+    justify-content: center;
   }
   @include sm {
+    flex-direction: row;
     justify-content: space-between;
   }
 }
 
-#logo {
-  width: 3rem;
-  height: 3rem;
-  margin: .5rem;
-  border-radius: 50%;
-  animation-name: logoAnimation;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: linear;
-}
-
-@keyframes logoAnimation {
-  0% {
-    background: $colorDark;
-  }
-  25% {
-    background: $colorMDark;
-  }
-  50% {
-    background: $colorMid;
-  }
-  75% {
-    background: $colorMLight;
-  }
-  100% {
-    background: $colorLight;
-  }
-}
