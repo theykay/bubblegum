@@ -9,13 +9,13 @@ const Menu = () => {
       <section id="menuSection">
         <FontAwesomeIcon id="burger" icon={faBars} />
         <ul id="menuContent">
-          <li id="link1">
+          <li class="menuItem" id="link1">
             <a class="menuLink" href="/">about</a>
           </li>
-          <li id="link2">
+          <li class="menuItem" id="link2">
             <a class="menuLink" href="/digital">apps</a>
           </li>
-          <li id="link3">
+          <li class="menuItem" id="link3">
             <a class="menuLink" href="/handmade">handmade</a>
           </li>
         </ul>
