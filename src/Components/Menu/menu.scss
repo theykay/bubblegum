@@ -1,6 +1,4 @@
-@import '../../styles/partials/colors';
-@import '../../styles/partials/screens';
-@import '../../styles/partials/fonts';
+@import '../../styles/main';
 
 // .dd-trigger {
 //   padding: .5rem;
@@ -98,6 +96,8 @@
     margin-right: 0.5rem;
     flex-direction: column;
     align-items: flex-end;
+    // padding: 0.25rem;
+    background-color: white;
   }
 }
 
@@ -112,7 +112,7 @@
     }
   }
   @include sm {
-    width: 100%;
+    align-self: stretch;
     justify-content: flex-end;
     padding: 0.25rem;
     &:hover {
