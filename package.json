@@ -19,11 +19,11 @@
   },
   "scripts": {
     "start:node": "node index.js",
-    "start:react": "react-scripts start",
-    "start": "node index.js",
+    "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "heroku-postbuild": "yarn build"
   },
   "eslintConfig": {
     "extends": [
