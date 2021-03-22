@@ -17,7 +17,7 @@ My portfolio ✌
 
 ## About
 Place for people to learn about me and various projects I've worked on, including web apps and handmade products.\
-Site built using primarily ReactJS and SCSS, hosted on Netlify.
+Site built using ReactJS, styled with SCSS, hosted on Netlify.
 
 ## Technologies
 * ReactJS
