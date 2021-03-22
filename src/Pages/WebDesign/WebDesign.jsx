@@ -1,13 +1,14 @@
 import React from 'react';
 import './WebDesign.scss';
-import Header from '../../Components/Header';
-import Footer from '../../Components/Footer';
+// import Header from '../../Components/Header';
+// import Footer from '../../Components/Footer';
 
 const WebDesign = () => {
   return (
     <>
-      <Header />
-      <Footer />
+      Apps
+      {/* <Header />
+      <Footer /> */}
     </>
   )
 }
