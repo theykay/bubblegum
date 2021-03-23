@@ -1,4 +1,4 @@
-@import '../../styles/partials/colors';
+@import '../../styles/main';
 
 #pageFoot {
   width: 100%;
@@ -13,6 +13,7 @@
 
 #pageFootContent {
   color: $colorDark;
+  font-family: $fontContent;
   padding: .5rem;
   text-decoration: none;
 }
