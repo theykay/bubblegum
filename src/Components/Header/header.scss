@@ -5,13 +5,29 @@
 @import '../../styles/partials/screens';
 @import '../../styles/partials/fonts';
 
+#pageHead {
+  background-color: $colorLight;
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  @include xs {
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 0;
+  }
+  @include sm {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
 #meTitle {
   display: flex;
   align-items: center;
   font-family: $fontFancy;
   font-size: 3rem;
   color: $colorMid;
-  padding: 1rem;
+  // padding: 1rem;
   @include xs {
     flex-direction: column;
     padding-bottom: 0.5rem;
@@ -29,18 +45,3 @@
     padding-right: 1rem;
   }
 }
-
-#pageHead {
-  background-color: $colorLight;
-  display: flex;
-  align-items: center;
-  @include xs {
-    flex-direction: column;
-    justify-content: center;
-  }
-  @include sm {
-    flex-direction: row;
-    justify-content: space-between;
-  }
-}
-

@@ -15,10 +15,10 @@
 
 #profPic {
   width: 20rem;
-  height: auto;
+  height: 20rem;
   border-radius: 50%;
   @include xs {
-    
+
   }
   @include sm {
     -webkit-transform: scaleX(-1);

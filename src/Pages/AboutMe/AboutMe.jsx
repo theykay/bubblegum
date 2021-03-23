@@ -15,7 +15,7 @@ const AboutMe = () => {
         <section id="metails">
           <h3><FontAwesomeIcon icon={faMapMarkerAlt} />Utah</h3>
           <p>Background as a textile goods maker and designer, education in industrial and web design, interested in accessibility design.</p>
-          <Link id="resumeLink" className="profLink" to={Resume} target="_blank">resume</Link>
+          <Link id="resumeLink" className="profLink" to={Resume} title="opens in new tab" target="_blank">resume</Link>
         </section>
         <section id="meLinks">
           <Link id="githubLink" className="profLink" to="https://github.com/theykay"><FontAwesomeIcon icon={faGithubSquare} />theykay</Link>
