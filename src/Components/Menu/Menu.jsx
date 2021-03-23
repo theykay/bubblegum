@@ -10,26 +10,26 @@ const Menu = () => {
       <section id="menuSection">
         <FontAwesomeIcon id="burger" icon={faBars} />
         <ul id="menuContent">
-          <li class="menuItem" id="link1">
-            <Link class="menuLink" to='/'>about</Link>
-            {/* <a class="menuLink" href="/">about</a> */}
+          <li className="menuItem" id="link1">
+            <Link className="menuLink" to='/'>about</Link>
+            {/* <a className="menuLink" href="/">about</a> */}
           </li>
-          <li class="menuItem" id="link2">
-            <Link class="menuLink" to='/digital'>apps</Link>
-            {/* <a class="menuLink" href="/digital">apps</a> */}
+          <li className="menuItem" id="link2">
+            <Link className="menuLink" to='/digital'>apps</Link>
+            {/* <a className="menuLink" href="/digital">apps</a> */}
           </li>
-          <li class="menuItem" id="link3">
-            <Link class="menuLink" to='/handmade'>handmade</Link>
-            {/* <a class="menuLink" href="/handmade">handmade</a> */}
+          <li className="menuItem" id="link3">
+            <Link className="menuLink" to='/handmade'>handmade</Link>
+            {/* <a className="menuLink" href="/handmade">handmade</a> */}
           </li>
         </ul>
       </section>
       {/* <nav>
-        <button class="dd-trigger"><FontAwesomeIcon icon={faBars} /></button>
-        <ul class="dd-menu">
-          <li class="dd1"><a class="ddLink" href="/">about</a></li>
-          <li class="dd2"><a class="ddLink" href="/digital">apps</a></li>
-          <li class="dd2"><a class="ddLink" href="/handmade">handmade</a></li>
+        <button className="dd-trigger"><FontAwesomeIcon icon={faBars} /></button>
+        <ul className="dd-menu">
+          <li className="dd1"><a className="ddLink" href="/">about</a></li>
+          <li className="dd2"><a className="ddLink" href="/digital">apps</a></li>
+          <li className="dd2"><a className="ddLink" href="/handmade">handmade</a></li>
         </ul>
       </nav> */}
     </>
