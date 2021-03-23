@@ -22,9 +22,9 @@ const AboutMe = () => {
           </article>
           <section id="meLinks">
             <h3>Find me at <span id="username">theykay</span> on</h3>
-            <Link id="githubLink" className="profLink" to="https://github.com/theykay" title=""><FontAwesomeIcon icon={faGithubSquare} /></Link>
-            <Link id="linkedLink" className="profLink" to="https://www.linked.com/in/theykay"><FontAwesomeIcon icon={faLinkedin} /></Link>
-            <Link id="discordLink" className="profLink" to="https://discord.gg/sKc5mWq"><FontAwesomeIcon icon={faDiscord} /></Link>
+            <Link id="githubLink" className="profLink" to="https://github.com/theykay" title="github.com/theykay"><FontAwesomeIcon icon={faGithubSquare} /></Link>
+            <Link id="linkedLink" className="profLink" to="https://www.linked.com/in/theykay" title="www.linked.com/in/theykay"><FontAwesomeIcon icon={faLinkedin} /></Link>
+            {/* <Link id="discordLink" className="profLink" to="https://discord.gg/sKc5mWq" title="discord.gg/sKc5mWq"><FontAwesomeIcon icon={faDiscord} /></Link> */}
             <Link id="emailLink" className="profLink" to="mailto:murraykyleb@gmail.com"><FontAwesomeIcon icon={faEnvelopeSquare} /> murraykyleb@gmail.com</Link>
           </section>
         </section>
