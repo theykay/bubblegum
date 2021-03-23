@@ -60,7 +60,9 @@
   // &:visited {}
   &:hover {
     color: $colorDark;
-    background-color: $colorMLight;
+    @include sm {
+      background-color: $colorMLight;
+    }
   }
   // &:active {}
 }
@@ -70,5 +72,8 @@
 }
 
 .showIcon {
+  @include xs {
+    display: none;
+  }
   color: $colorMDark;
 }
