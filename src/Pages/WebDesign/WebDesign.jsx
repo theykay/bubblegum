@@ -18,9 +18,9 @@ const WebDesign = () => {
 
   return (
     <>
-      <header>
+      {/* <header>
         <h3>Web Apps</h3>
-      </header>
+      </header> */}
       <section>
         {webProjects.map((project, index) => {
           return (

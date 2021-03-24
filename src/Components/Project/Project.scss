@@ -5,10 +5,10 @@
   margin: 1rem;
   padding: .5rem;
   border-radius: .25rem;
+  height: auto;
   @include xs {
     position: relative;
     display: block;
-    height: auto;
     overflow: hidden;
     &:hover {
       .cardText {
@@ -21,16 +21,31 @@
     display: flex;
     flex-direction: row;
   }
+  @include md {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    width: 40%;
+    &:hover {
+      .cardText {
+        display: flex;
+      }
+    }
+  }
 }
 
 .cardImage {
   border-radius: .25rem;
+  margin-bottom: auto;
   @include xs {
     width: 100%;
   }
   @include sm {
     width: 45%;
     margin-right: 2rem;
+  }
+  @include md {
+    width: 100%;
   }
 }
 
@@ -52,7 +67,7 @@
     width: auto;
     padding: 1rem;
     opacity: 0;
-    background-color: $colorLight;
+    background-color: transparentize($colorLight, .02);
     position: absolute;
     top: 0;
     left: 0;
@@ -66,6 +81,24 @@
     justify-content: flex-end;
     & * {
       margin-top: 1rem;
+    }
+  }
+  @include md {
+    justify-content: space-between;
+    & * {
+      margin-top: 0;
+    }
+    height: stretch;
+    width: auto;
+    opacity: 0;
+    background-color: transparentize($colorLight, .02);
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 1rem;
+    transition: all 400ms ease-out;
+    &:hover {
+      opacity: 1;
     }
   }
 }
@@ -93,6 +126,4 @@
   background-color: $colorMLight;
   border-radius: .5rem;
   margin-right: auto;
-  @include xs {
-  }
 }
