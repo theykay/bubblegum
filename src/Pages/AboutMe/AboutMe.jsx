@@ -3,7 +3,8 @@ import { Link } from 'react-router-dom';
 import './AboutMe.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelopeSquare, faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons';
-import { faGithubSquare, faLinkedin, faDiscord } from '@fortawesome/free-brands-svg-icons';
+import { faGithubSquare, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+// import { faDiscord } from '@fortawesome/free-brands-svg-icons';
 import ProfilePic from '../../images/profile.jpeg';
 import Resume from '../../images/KayMurray.pdf';
 
