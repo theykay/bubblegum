@@ -1,0 +1,64 @@
+@import '../../styles/main.scss';
+
+.projectCard {
+  display: flex;
+  position: relative;
+  display: block;
+  box-shadow: 0 0 1rem $colorMLight;
+  @include xs {
+    margin: 1rem;
+    padding: .5rem;
+    border-radius: .25rem;
+    height: auto;
+    overflow: hidden;
+    &:hover {
+      .cardText {
+        display: flex;
+      }
+    }
+  }
+}
+
+.cardImage {
+  width: 100%;
+  border-radius: .25rem;
+  // filter: grayscale(100%);
+}
+
+.cardText {
+  @include xs {
+    height: stretch;
+    width: auto;
+    padding: 1rem;
+    opacity: 0;
+    background-color: $colorLight;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 400ms ease-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
+
+.cardLinks {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.cardLink {
+  color: $colorDark;
+  font-family: $fontFancy;
+  padding: .75rem 1rem;
+  margin: auto;
+  border: solid 2px $colorMid;
+  border-radius: .5rem;
+  &:hover {
+    background-color: $colorLight;
+    color: $colorDark;
+  }
+}

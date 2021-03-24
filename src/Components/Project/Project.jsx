@@ -17,13 +17,15 @@ const Project = (props) => {
         <section className='cardText'>
           <h3>{props.title}</h3>
           <p>{props.info}</p>
-          <ul className="mediaList">
+          <ul className="mediaList">languages/tools:
             {props.media.map((medium, index) => {
               return <li key={medium}>{medium}</li>
             })}
           </ul>
-          {props.repo && <a href={props.repo} target="_blank" rel="noreferrer">Repository</a>}
-          {props.site && <a href={props.site} target="_blank" rel="noreferrer">Live Site</a>}
+          <div className="cardLinks">
+            {props.repo && <a className="cardLink" href={props.repo} target="_blank" rel="noreferrer">Repository</a>}
+            {props.site && <a className="cardLink" href={props.site} target="_blank" rel="noreferrer">Live Site</a>}
+          </div>
         </section>
       </article>
     </>
