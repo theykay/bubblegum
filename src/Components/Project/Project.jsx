@@ -19,7 +19,7 @@ const Project = (props) => {
           <p>{props.info}</p>
           <ul className="mediaList">
             {props.media.map((medium, index) => {
-              return <li>{medium}</li>
+              return <li key={medium}>{medium}</li>
             })}
           </ul>
           {props.repo && <a href={props.repo} target="_blank" rel="noreferrer">Repository</a>}

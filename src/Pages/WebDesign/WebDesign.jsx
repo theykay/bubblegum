@@ -24,6 +24,7 @@ const WebDesign = () => {
         {webProjects.map((project, index) => {
           return (
             <Project 
+              key={project.title}
               image={project.image}
               title={project.title}
               info={project.info}
