@@ -1,19 +1,38 @@
 import React from 'react';
 import './WebDesign.scss';
-// import Header from '../../Components/Header';
-// import Footer from '../../Components/Footer';
 import Project from '../../Components/Project';
+import Colab from '../../images/projects/CoLab.png';
 
 const WebDesign = () => {
+  const webProjects = [
+    {
+      image: Colab,
+      title: "CoLab",
+      info: "The brand new way to connect like-minded individuals who are looking to collaborate with others in their profession. The application currently focuses on musicians, but could be expanded to encompass professions such as filmmaking, photography, and programming.",
+      media: ['ReactJS', 'Express.js', 'Node.js', 'MongoDB'],
+      site: 'https://afternoon-eyrie-78094.herokuapp.com/',
+      repo: 'https://github.com/Rxjas/CoLab',
+    },
+  ];
+
   return (
     <>
       <header>
         <h3>Web Apps</h3>
       </header>
       <section>
-        <Project 
-          
-        />
+        {webProjects.map((project, index) => {
+          return (
+            <Project 
+              image={project.image}
+              title={project.title}
+              info={project.info}
+              media={project.media}
+              site={project.site}
+              repo={project.repo}
+            />
+          )
+        })}
       </section>
       {/* <Header />
       <Footer /> */}

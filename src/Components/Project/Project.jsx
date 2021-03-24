@@ -1,14 +1,13 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import './Project.scss';
 
 // props:
 // image -> import in parent
 // title -> name of project
 // info -> blurb about project
+// media -> array containing languages or materials used
 // site -> link to live app (only relevant for apps)
 // repo -> link to repository (only relevant for apps)
-// media -> array containing languages or materials used
 
 const Project = (props) => {
   return (
@@ -23,8 +22,8 @@ const Project = (props) => {
               return <li>{medium}</li>
             })}
           </ul>
-          {props.repo && <Link to={props.repo}>Repository</Link>}
-          {props.site && <Link to={props.site}>Live Site</Link>}
+          {props.repo && <a href={props.repo} target="_blank" rel="noreferrer">Repository</a>}
+          {props.site && <a href={props.site} target="_blank" rel="noreferrer">Live Site</a>}
         </section>
       </article>
     </>
