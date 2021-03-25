@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './AboutMe.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEnvelopeSquare, faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelopeSquare, faMapMarkerAlt, faFile } from '@fortawesome/free-solid-svg-icons';
 import { faGithubSquare, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 // import { faDiscord } from '@fortawesome/free-brands-svg-icons';
 import ProfilePic from '../../images/profile.jpeg';
@@ -15,22 +15,43 @@ const AboutMe = () => {
         <section>
           <img id="profPic" src={ProfilePic} alt="me artistically draped around an overturned chair" />
           <h3 id="location"><FontAwesomeIcon icon={faMapMarkerAlt} /> Utah</h3>
+          <ul className="meLinks">
+            <li>
+              <a className="profLink" href="https://github.com/theykay" title="github/theykay" target="_blank" rel="noreferrer">
+                <FontAwesomeIcon icon={faGithubSquare} />
+              </a>
+            </li>
+            <li>
+              <a className="profLink" href="https://www.linkedin.com/in/theykay" title="linked/theykay" target="_blank" rel="noreferrer">
+                <FontAwesomeIcon icon={faLinkedin} />
+              </a>
+            </li>
+            {/* <li>
+              <a className="profLink" href="https://discord.gg/sKc5mWq" title="discord/theykay" target="_blank" rel="noreferrer">
+                <FontAwesomeIcon icon={faDiscord} />
+              </a>
+            </li> */}
+            <li>
+              <a className="profLink" href="mailto:murraykyleb@gmail.com" title="gmail/murraykyleb" target="_blank" rel="noreferrer">
+                <FontAwesomeIcon icon={faEnvelopeSquare} />
+              </a>
+            </li>
+          </ul>
         </section>
         <section>
           <article id="metails">
-            <p>My background is in soft goods (making and designing), education in industrial and web design, and I'm interested in accessibility design.</p>
-            <Link id="resumeLink" className="profLink" to={Resume} title="opens in new tab" target="_blank">resume</Link>
+            <ul>
+              <li>Experience: making/designing soft goods</li>
+              <li>Education: industrial design / full stack web development</li>
+              <li>Interested in: accessibility design</li>
+            </ul>
+            <p>Primary experience is making and designing soft goods, education in industrial and web design, and I'm interested in accessibility design.</p>
+            <Link id="resumeLink" className="profLink" to={Resume} title="opens in new tab" target="_blank"><FontAwesomeIcon icon={faFile} /> resume</Link>
           </article>
-          <section id="meLinks">
-            <h3>Find me at <span id="username">theykay</span> on</h3>
-            <Link id="githubLink" className="profLink" to="https://github.com/theykay" title="github.com/theykay"><FontAwesomeIcon icon={faGithubSquare} /></Link>
-            <Link id="linkedLink" className="profLink" to="https://www.linked.com/in/theykay" title="www.linked.com/in/theykay"><FontAwesomeIcon icon={faLinkedin} /></Link>
-            {/* <Link id="discordLink" className="profLink" to="https://discord.gg/sKc5mWq" title="discord.gg/sKc5mWq"><FontAwesomeIcon icon={faDiscord} /></Link> */}
-            <Link id="emailLink" className="profLink" to="mailto:murraykyleb@gmail.com"><FontAwesomeIcon icon={faEnvelopeSquare} /> murraykyleb@gmail.com</Link>
-          </section>
         </section>
         <article id="plsContinue">
           {/* random stuff about me */}
+          {/* <p>Bad at video games but still enjoy playing</p> */}
         </article>
       </section>
     </>
