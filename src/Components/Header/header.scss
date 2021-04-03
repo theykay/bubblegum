@@ -1,21 +1,18 @@
 /* dropdown menu animation */
 /* https://codinhood.com/micro/10-dropdown-menu-animations-css-transform */
 @import '../../styles/main.scss';
-@import '../../styles/partials/colors';
-@import '../../styles/partials/screens';
-@import '../../styles/partials/fonts';
 
 #pageHead {
   background-color: $colorLight;
   display: flex;
   align-items: center;
-  padding: 1rem;
   @include xs {
     flex-direction: column;
     justify-content: center;
-    padding-bottom: 0;
+    padding: 1rem 0 0 0;
   }
   @include sm {
+    padding: 1rem;
     flex-direction: row;
     justify-content: space-between;
   }

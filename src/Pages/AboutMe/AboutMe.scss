@@ -3,6 +3,7 @@
 #aboutMe {
   display: flex;
   margin: 1rem;
+  margin-bottom: 3rem;
   @include xs {
     flex-direction: column;
     align-items: center;
@@ -43,21 +44,51 @@
 
 .meLinks {
   display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: flex-start;
+  float: left;
+  margin: 0 auto;
+  @include xs {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  @include sm {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+}
+
+.meLinksItem {
+  padding: .25rem;
 }
 
 .profLink {
   // margin: .25rem .5rem;
-  font-size: 2rem;
+  @include xs {
+    font-size: 1.5rem;
+  }
+  @include sm {
+    font-size: 2rem;
+  }
   &:hover {
     color: $colorMid;
   }
 }
 
+.icon {
+  padding-right: .5rem;
+}
+
+#fileIcon {
+  font-size: 1.75rem;
+}
+
 #username {
   font-family: $fontFancy;
+}
+
+.techIcon {
+  color: $colorDark;
 }
 
 p, a {
@@ -67,5 +98,4 @@ p, a {
 
 a {
   text-decoration: none;
-
 }

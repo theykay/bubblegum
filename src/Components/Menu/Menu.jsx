@@ -19,7 +19,7 @@ const Menu = () => {
         </li>
         <li className={(usePathname() === '/digital' && 'menuItem current') || 'menuItem'} id="link2">
           <FontAwesomeIcon className={(usePathname() === '/digital' && 'showIcon') || 'hideIcon'} icon={faMapMarkerAlt} />
-          <Link className="menuLink" to='/digital'>apps</Link>
+          <Link className="menuLink" to='/digital'>projects</Link>
         </li>
         <li className={(usePathname() === '/handmade' && 'menuItem current') || 'menuItem'} id="link3">
           <FontAwesomeIcon className={(usePathname() === '/handmade' && 'showIcon') || 'hideIcon'} icon={faMapMarkerAlt} />

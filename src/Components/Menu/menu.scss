@@ -57,6 +57,9 @@
   font-size: 1.25rem;
   padding: 0.5rem 0.75rem;
   border-radius: .25rem;
+  @include xs {
+    padding: 0.5rem 0;
+  }
   // &:link {}
   // &:visited {}
   &:hover {
