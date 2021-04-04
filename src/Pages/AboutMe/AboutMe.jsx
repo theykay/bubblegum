@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './AboutMe.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEnvelopeSquare, faMapMarkerAlt, faFile } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelopeSquare, faMapMarkerAlt, faDownload } from '@fortawesome/free-solid-svg-icons';
 import { faGithubSquare, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faCode, faDatabase } from '@fortawesome/free-solid-svg-icons';
 import { faHtml5, faCss3Alt, faSass, faJsSquare, faReact, faBootstrap, faNodeJs, faNpm, faGithub } from '@fortawesome/free-brands-svg-icons';
@@ -25,7 +25,6 @@ const AboutMe = () => {
               <li>Interested in: accessibility design</li>
             </ul>
             <p>Primary experience is making and designing soft goods, education in industrial and web design, and I'm interested in accessibility design.</p>
-            <Link id="resumeLink" className="profLink" to={Resume} title="opens in new tab" target="_blank"><FontAwesomeIcon icon={faFile} /> resume</Link>
           </article>
         </section>
         <section id="plsContinue">
@@ -33,50 +32,64 @@ const AboutMe = () => {
           {/* <p>Bad at video games but still enjoy playing</p> */}
         </section>
         <section id="skills">
-          <ul id="technologies"><FontAwesomeIcon icon={faCode} /> technologies
+          <h3 id="skillsHeader"><FontAwesomeIcon icon={faCode} /> Skills and Techs</h3>
+          <ul id="technologies">
             <li className="techItem">
-              <FontAwesomeIcon className="techIcon" icon={faHtml5} />HTML5
+              <FontAwesomeIcon className="techIcon" icon={faHtml5} />
+              <p>HTML5</p>
             </li>
             <li className="techItem">
-              <FontAwesomeIcon className="techIcon" icon={faCss3Alt} />CSS3
+              <FontAwesomeIcon className="techIcon" icon={faCss3Alt} />
+              <p>CSS3</p>
             </li>
             <li className="techItem">
-              <FontAwesomeIcon className="techIcon" icon={faSass} />SCSS
+              <FontAwesomeIcon className="techIcon" icon={faSass} />
+              <p>SCSS</p>
             </li>
             <li className="techItem">
-              <FontAwesomeIcon className="techIcon" icon={faJsSquare} />JavaScript/jQuery
+              <FontAwesomeIcon className="techIcon" icon={faJsSquare} />
+              <p>JavaScript/jQuery</p>
             </li>
             <li className="techItem">
-              <FontAwesomeIcon className="techIcon" icon={faReact} />React.js
+              <FontAwesomeIcon className="techIcon" icon={faNodeJs} />
+              <p>Node.js/Express</p>
             </li>
             <li className="techItem">
-              <FontAwesomeIcon className="techIcon" icon={faBootstrap} />Bootstrap
+              <FontAwesomeIcon className="techIcon" icon={faNpm} />
+              <p>npm.js</p>
             </li>
             <li className="techItem">
-              <FontAwesomeIcon className="techIcon" icon={faNodeJs} />Node.js /Express
+              <FontAwesomeIcon className="techIcon" icon={faReact} />
+              <p>React.js</p>
             </li>
             <li className="techItem">
-              <FontAwesomeIcon className="techIcon" icon={faNpm} />npm.js
+              <FontAwesomeIcon className="techIcon" icon={faBootstrap} />
+              <p>Bootstrap</p>
             </li>
             <li className="techItem">
-              <FontAwesomeIcon className="techIcon" icon={faGithub} />git/github
+              <FontAwesomeIcon className="techIcon" icon={faGithub} />
+              <p>git/github</p>
+            </li>
+            <li className="techItem">
+              <FontAwesomeIcon className="techIcon" icon={faDatabase} />
+              <p>SQL, mongoose</p>
             </li>
           </ul>
         </section>
         <ul className="meLinks">
           <li className="meLinksItem">
-            <Link id="resumeLink" className="profLink" to={Resume} title="opens in new tab" target="_blank"><FontAwesomeIcon id="fileIcon" className="icon" icon={faFile} />resume</Link>
+            <Link className="profLink" to={Resume} title="opens in new tab" target="_blank"><FontAwesomeIcon id="download" className="icon" icon={faDownload} />resume</Link>
           </li>
           <li className="meLinksItem">
             <a className="profLink" href="https://github.com/theykay" title="github/theykay" target="_blank" rel="noreferrer">
               <FontAwesomeIcon className="icon" icon={faGithubSquare} />
-                github/theykay
+                github
               </a>
           </li>
           <li className="meLinksItem">
             <a className="profLink" href="https://www.linkedin.com/in/theykay" title="linked/theykay" target="_blank" rel="noreferrer">
               <FontAwesomeIcon className="icon" icon={faLinkedin} />
-                linkedin/theykay
+                linkedin
               </a>
           </li>
           <li className="meLinksItem">
