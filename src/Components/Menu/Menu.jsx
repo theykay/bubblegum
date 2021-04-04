@@ -21,10 +21,10 @@ const Menu = () => {
           <FontAwesomeIcon className={(usePathname() === '/digital' && 'showIcon') || 'hideIcon'} icon={faMapMarkerAlt} />
           <Link className="menuLink" to='/digital'>projects</Link>
         </li>
-        <li className={(usePathname() === '/handmade' && 'menuItem current') || 'menuItem'} id="link3">
+        {/* <li className={(usePathname() === '/handmade' && 'menuItem current') || 'menuItem'} id="link3">
           <FontAwesomeIcon className={(usePathname() === '/handmade' && 'showIcon') || 'hideIcon'} icon={faMapMarkerAlt} />
           <Link className="menuLink" to='/handmade'>handmade</Link>
-        </li>
+        </li> */}
       </ul>
     </>
   )
