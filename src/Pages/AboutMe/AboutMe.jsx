@@ -72,7 +72,7 @@ const AboutMe = () => {
             </li>
             <li className="techItem">
               <FontAwesomeIcon className="techIcon" icon={faDatabase} />
-              <p>SQL, mongoose</p>
+              <p>SQL, MongoDB</p>
             </li>
           </ul>
         </section>
