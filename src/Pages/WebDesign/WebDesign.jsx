@@ -56,7 +56,7 @@ const WebDesign = () => {
       {/* <header>
         <h3>Web Apps</h3>
       </header> */}
-      <section>
+      <section id="webProjects">
         {webProjects.map((project, index) => {
           return (
             <Project 
