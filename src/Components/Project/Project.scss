@@ -2,7 +2,7 @@
 
 .projectCard {
   border: solid 2px $colorLight;
-  margin: 1rem;
+  margin: 0 1rem 1rem 1rem;
   padding: .5rem;
   border-radius: .25rem;
   height: auto;
@@ -23,9 +23,13 @@
   }
   @include md {
     position: relative;
-    display: block;
+    display: flex;
+    align-items: space-around;
+    justify-content: space-around;
     overflow: hidden;
-    width: 40%;
+    // width: 40%;
+    width: calc(50% - 4.5rem);
+    margin: 0 0 1rem 0;
     &:hover {
       .cardText {
         display: flex;
@@ -45,7 +49,11 @@
     margin-right: 2rem;
   }
   @include md {
-    width: 100%;
+    // max-width: 18rem;
+    // max-height: 17rem;
+    width: auto;
+    height: 16rem;
+    margin: auto;
   }
 }
 
@@ -108,7 +116,7 @@
   color: $colorDark;
   width: 100%;
   & li {
-    width: 25%;
+    // width: 25%;
     font-family: $fontContent;
     margin: 0;
   }
