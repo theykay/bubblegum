@@ -12,7 +12,7 @@ const WebDesign = () => {
     {
       image: Colab,
       title: "CoLab",
-      info: "The brand new way to connect like-minded individuals who are looking to collaborate with others in their profession. The application currently focuses on musicians, but could be expanded to encompass professions such as filmmaking, photography, and programming.",
+      info: "Way to connect individuals looking to collaborate with others in their profession. Currently focused on musicians.",
       media: ['ReactJS', 'Express.js', 'Node.js', 'MongoDB'],
       site: 'https://afternoon-eyrie-78094.herokuapp.com/',
       repo: 'https://github.com/Rxjas/CoLab',
