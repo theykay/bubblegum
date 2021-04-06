@@ -13,19 +13,18 @@ const AboutMe = () => {
   return (
     <>
       <section id="aboutMe">
-        <section>
+        <article id="graphic">
           <img id="profPic" src={ProfilePic} alt="me artistically draped around an overturned chair" />
           <h3 id="location"><FontAwesomeIcon icon={faMapMarkerAlt} /> Utah</h3>
-        </section>
-        <section>
-          <article id="metails">
-            {/* A bio that demonstrates experience in and passion for your desired role */}
-            {/* a ‘bio’’ section that discusses your background and how it relates to the role you are currently going for.  */}
-            {/* Keep in mind in your bio section, we want to include 5 skills and technologies as a visual impact */}
-            <p id="intro">Web developer utilizing a background in industrial design to make more accessible applications. Experienced with JavaScript/jQuery, HTML, CSS/SCSS, Node.js/Express from earning a certificate in full stack web development at the University of Utah. Working to make products and experiences comfortable and easy to use, involving the end user as much as possible in the design process. Excited about continuing to learn and implement principles of accessibility and universal design to build applications with a more diverse range of users in mind. Motivated to learn new technologies and become better acquainted with familiar ones.</p>
-            <p id="experience"></p>
-          </article>
-        </section>
+        </article>
+        <article id="metails">
+          {/* A bio that demonstrates experience in and passion for your desired role */}
+          {/* a ‘bio’’ section that discusses your background and how it relates to the role you are currently going for.  */}
+          {/* Keep in mind in your bio section, we want to include 5 skills and technologies as a visual impact */}
+          <p id="intro">Web developer utilizing a background in industrial design to make more accessible applications. Experienced with JavaScript/jQuery, HTML, CSS/SCSS, Node.js/Express from earning a certificate in full stack web development at the University of Utah. Working to make products and experiences comfortable and easy to use, involving the end user as much as possible in the design process. Excited about continuing to learn and implement principles of accessibility and universal design to build applications with a more diverse range of users in mind. Motivated to learn new technologies and become better acquainted with familiar ones.</p>
+          <p id="experience"></p>
+        </article>
+
         <section id="plsContinue">
           {/* random stuff about me */}
           {/* <p>Bad at video games but still enjoy playing</p> */}
@@ -80,6 +79,12 @@ const AboutMe = () => {
             <Link className="profLink" to={Resume} title="opens in new tab" target="_blank"><FontAwesomeIcon id="download" className="icon" icon={faDownload} />resume</Link>
           </li>
           <li className="meLinksItem">
+            <a className="profLink" href="mailto:murraykyleb@gmail.com" title="gmail/murraykyleb" target="_blank" rel="noreferrer">
+              <FontAwesomeIcon className="icon" icon={faEnvelopeSquare} />
+                email
+              </a>
+          </li>
+          <li className="meLinksItem">
             <a className="profLink" href="https://github.com/theykay" title="github/theykay" target="_blank" rel="noreferrer">
               <FontAwesomeIcon className="icon" icon={faGithubSquare} />
                 github
@@ -91,12 +96,7 @@ const AboutMe = () => {
                 linkedin
               </a>
           </li>
-          <li className="meLinksItem">
-            <a className="profLink" href="mailto:murraykyleb@gmail.com" title="gmail/murraykyleb" target="_blank" rel="noreferrer">
-              <FontAwesomeIcon className="icon" icon={faEnvelopeSquare} />
-                email
-              </a>
-          </li>
+          
         </ul>
       </section>
     </>
