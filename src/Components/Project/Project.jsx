@@ -9,6 +9,9 @@ import './Project.scss';
 // site -> link to live app (only relevant for apps)
 // repo -> link to repository (only relevant for apps)
 
+// Every project should include 
+// the concepts and technologies used to build it
+
 const Project = (props) => {
   return (
     <>

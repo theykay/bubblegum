@@ -19,6 +19,8 @@ const AboutMe = () => {
         </section>
         <section>
           <article id="metails">
+            {/* A bio that demonstrates experience in and passion for your desired role */}
+            <p></p>
             <ul>
               <li>Experience: making/designing soft goods</li>
               <li>Education: industrial design / full stack web development</li>
