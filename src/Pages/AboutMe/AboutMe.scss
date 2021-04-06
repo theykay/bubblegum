@@ -1,5 +1,14 @@
 @import '../../styles/main';
 
+p, a {
+  font-family: $fontContent;
+  color: $colorDark;
+}
+
+a {
+  text-decoration: none;
+}
+
 #aboutMe {
   display: flex;
   margin: 1rem;
@@ -126,13 +135,4 @@
 .techIcon {
   color: $colorDark;
   font-size: 2rem;
-}
-
-p, a {
-  font-family: $fontContent;
-  color: $colorDark;
-}
-
-a {
-  text-decoration: none;
 }

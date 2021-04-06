@@ -20,13 +20,10 @@ const AboutMe = () => {
         <section>
           <article id="metails">
             {/* A bio that demonstrates experience in and passion for your desired role */}
-            <p></p>
-            <ul>
-              <li>Experience: making/designing soft goods</li>
-              <li>Education: industrial design / full stack web development</li>
-              <li>Interested in: accessibility design</li>
-            </ul>
-            <p>Primary experience is making and designing soft goods, education in industrial and web design, and I'm interested in accessibility design.</p>
+            {/* a ‘bio’’ section that discusses your background and how it relates to the role you are currently going for.  */}
+            {/* Keep in mind in your bio section, we want to include 5 skills and technologies as a visual impact */}
+            <p id="intro">Web developer utilizing a background in industrial design to make more accessible applications. Experienced with JavaScript/jQuery, HTML, CSS/SCSS, Node.js/Express from earning a certificate in full stack web development at the University of Utah. Working to make products and experiences comfortable and easy to use, involving the end user as much as possible in the design process. Excited about continuing to learn and implement principles of accessibility and universal design to build applications with a more diverse range of users in mind. Motivated to learn new technologies and become better acquainted with familiar ones.</p>
+            <p id="experience"></p>
           </article>
         </section>
         <section id="plsContinue">
