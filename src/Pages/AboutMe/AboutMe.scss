@@ -58,7 +58,7 @@ a {
   & p {
     font-size: 1.25rem;
   }
-  @include sm {
+  @include md {
     max-width: calc(100% - 22rem);
     height: fit-content;
   }
@@ -161,6 +161,6 @@ a {
 .meLinksItem {
   padding: .25rem;
   @include sm {
-    padding: 0 1.5rem;
+    // padding: 0 1.5rem;
   }
 }
