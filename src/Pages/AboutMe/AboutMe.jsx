@@ -4,7 +4,7 @@ import './AboutMe.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelopeSquare, faMapMarkerAlt, faDownload } from '@fortawesome/free-solid-svg-icons';
 import { faGithubSquare, faLinkedin } from '@fortawesome/free-brands-svg-icons';
-import { faCode, faDatabase } from '@fortawesome/free-solid-svg-icons';
+import { faCode, faDatabase, faExternalLinkAlt, faAngleRight, faAngleLeft } from '@fortawesome/free-solid-svg-icons';
 import { faHtml5, faCss3Alt, faSass, faJsSquare, faReact, faBootstrap, faNodeJs, faNpm, faGithub } from '@fortawesome/free-brands-svg-icons';
 import ProfilePic from '../../images/profile.jpeg';
 import Resume from '../../images/KayMurray.pdf';
@@ -30,7 +30,7 @@ const AboutMe = () => {
           {/* <p>Bad at video games but still enjoy playing</p> */}
         </section>
         <section id="skills">
-          <h3 id="skillsHeader"><FontAwesomeIcon icon={faCode} /> Skills and Techs</h3>
+          <h3 id="skillsHeader"><FontAwesomeIcon icon={faAngleLeft} /><FontAwesomeIcon icon={faAngleRight} /> Skills and Techs <FontAwesomeIcon icon={faCode} /></h3>
           <ul id="technologies">
             <li className="techItem">
               <FontAwesomeIcon className="techIcon" icon={faHtml5} />
@@ -74,30 +74,32 @@ const AboutMe = () => {
             </li>
           </ul>
         </section>
-        <ul className="meLinks">
-          <li className="meLinksItem">
-            <Link className="profLink" to={Resume} title="opens in new tab" target="_blank"><FontAwesomeIcon id="download" className="icon" icon={faDownload} />resume</Link>
-          </li>
-          <li className="meLinksItem">
-            <a className="profLink" href="mailto:murraykyleb@gmail.com" title="gmail/murraykyleb" target="_blank" rel="noreferrer">
-              <FontAwesomeIcon className="icon" icon={faEnvelopeSquare} />
+        <section id="whereFind">
+          <h3 id="linkHead"><FontAwesomeIcon icon={faExternalLinkAlt} /> Links</h3>
+          <ul className="meLinks">
+            <li className="meLinksItem">
+              <Link className="profLink" to={Resume} title="opens in new tab" target="_blank"><FontAwesomeIcon id="download" className="icon" icon={faDownload} />resume</Link>
+            </li>
+            <li className="meLinksItem">
+              <a className="profLink" href="mailto:murraykyleb@gmail.com" title="gmail/murraykyleb" target="_blank" rel="noreferrer">
+                <FontAwesomeIcon className="icon" icon={faEnvelopeSquare} />
                 email
               </a>
-          </li>
-          <li className="meLinksItem">
-            <a className="profLink" href="https://github.com/theykay" title="github/theykay" target="_blank" rel="noreferrer">
-              <FontAwesomeIcon className="icon" icon={faGithubSquare} />
+            </li>
+            <li className="meLinksItem">
+              <a className="profLink" href="https://github.com/theykay" title="github/theykay" target="_blank" rel="noreferrer">
+                <FontAwesomeIcon className="icon" icon={faGithubSquare} />
                 github
               </a>
-          </li>
-          <li className="meLinksItem">
-            <a className="profLink" href="https://www.linkedin.com/in/theykay" title="linked/theykay" target="_blank" rel="noreferrer">
-              <FontAwesomeIcon className="icon" icon={faLinkedin} />
+            </li>
+            <li className="meLinksItem">
+              <a className="profLink" href="https://www.linkedin.com/in/theykay" title="linked/theykay" target="_blank" rel="noreferrer">
+                <FontAwesomeIcon className="icon" icon={faLinkedin} />
                 linkedin
               </a>
-          </li>
-          
-        </ul>
+            </li>
+          </ul>
+        </section>
       </section>
     </>
   )
