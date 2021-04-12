@@ -4,7 +4,7 @@ import './AboutMe.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelopeSquare, faMapMarkerAlt, faDownload } from '@fortawesome/free-solid-svg-icons';
 import { faGithubSquare, faLinkedin } from '@fortawesome/free-brands-svg-icons';
-import { faCode, faDatabase, faExternalLinkAlt, faAngleRight, faAngleLeft } from '@fortawesome/free-solid-svg-icons';
+import { faCode, faDatabase, faExternalLinkAlt, faAngleRight, faAngleLeft, faCertificate } from '@fortawesome/free-solid-svg-icons';
 import { faHtml5, faCss3Alt, faSass, faJsSquare, faReact, faBootstrap, faNodeJs, faNpm, faGithub } from '@fortawesome/free-brands-svg-icons';
 import ProfilePic from '../../images/profile.jpeg';
 import Resume from '../../images/KayMurray.pdf';
@@ -19,13 +19,14 @@ const AboutMe = () => {
         </article>
         <article id="metails">
           {/* A bio that demonstrates experience in and passion for your desired role */}
-          {/* a ‘bio’’ section that discusses your background and how it relates to the role you are currently going for.  */}
+          {/* a ‘bio’’ section that discusses your background and how it relates to the role you are currently going for */}
           {/* Keep in mind in your bio section, we want to include 5 skills and technologies as a visual impact */}
-          <p className="introP" id="intro">Web developer utilizing a background in industrial design to make more accessible applications. </p>
-          <p className="introP">Experienced with JavaScript/jQuery, HTML, CSS/SCSS, Node.js/Express from earning a certificate in full stack web development at the University of Utah</p>
+          <p className="introP">I'm Kay, a web developer working to make accessible applications. I have a BFA in Industrial Design, and a Full Stack Web Development certificate. I'm excited about continuing to learn and implement principles of accessibility and universal design to build applications with a more diverse range of users in mind. My main interest is in making, using anything from code to textiles</p>
+          {/* <p className="introP">web developer utilizing a background in industrial design to make more accessible applications</p>
+          <p className="introP"><FontAwesomeIcon icon={faCertificate} /> Full Stack Web Development, University of Utah</p>
           <p className="introP">Working to make products and experiences comfortable and easy to use, involving the end user as much as possible in the design process</p>
           <p className="introP">Excited about continuing to learn and implement principles of accessibility and universal design to build applications with a more diverse range of users in mind</p>
-          <p className="introP">Motivated to learn new technologies and become better acquainted with familiar ones</p>
+          <p className="introP">Motivated to learn new technologies and become better acquainted with familiar ones</p> */}
           <p id="experience"></p>
         </article>
 
