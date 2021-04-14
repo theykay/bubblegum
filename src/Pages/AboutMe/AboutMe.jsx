@@ -21,7 +21,7 @@ const AboutMe = () => {
           {/* A bio that demonstrates experience in and passion for your desired role */}
           {/* a ‘bio’’ section that discusses your background and how it relates to the role you are currently going for */}
           {/* Keep in mind in your bio section, we want to include 5 skills and technologies as a visual impact */}
-          <p className="introP">I'm Kay, a web developer working to make accessible applications. I have a BFA in Industrial Design, and a Full Stack Web Development certificate. I'm excited about continuing to learn and implement principles of accessibility and universal design to build applications with a more diverse range of users in mind. Mainly I'm interested in making things, using anything from code to textiles</p>
+          <p className="introP">I'm Kay, a web developer working to make accessible applications. I have a BFA in Industrial Design, and a Full Stack Web Development certificate. I'm excited about continuing to learn and implement principles of accessibility and universal design to build applications with a more diverse range of users in mind. Mainly I'm interested in making things, using anything from code to textiles.</p>
           {/* <p className="introP">web developer utilizing a background in industrial design to make more accessible applications</p>
           <p className="introP"><FontAwesomeIcon icon={faCertificate} /> Full Stack Web Development, University of Utah</p>
           <p className="introP">Working to make products and experiences comfortable and easy to use, involving the end user as much as possible in the design process</p>
