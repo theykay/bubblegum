@@ -6,11 +6,12 @@ import Footer from './Components/Footer';
 import AboutMe from "./Pages/AboutMe";
 import Handmade from "./Pages/Handmade";
 import WebDesign from "./Pages/WebDesign";
+import OnePage from './Pages/OnePage';
 
 const App = () => {
   return (
     <>
-      <Router>
+      {/* <Router>
         <Header />
         <Switch>
           <Route exact path="/" component={AboutMe} />
@@ -18,7 +19,8 @@ const App = () => {
           <Route exact path="/handmade" component={Handmade} />
         </Switch>
         <Footer />
-      </Router>
+      </Router> */}
+      <OnePage />
     </>
   );
 };

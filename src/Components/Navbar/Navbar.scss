@@ -1,0 +1,69 @@
+@use '../../styles/main' as styles;
+
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.links-list {
+  display: inline-flex;
+  background-color: black;
+  // padding: .75rem;
+  height: auto;
+  // width: auto;
+  // margin-right: auto;
+  // margin-left: auto;
+  @include styles.xs {
+    flex-direction: column;
+  }
+  @include styles.sm {
+    flex-direction: row;
+    justify-content: center;
+    align-items: space-between;
+  }
+}
+
+.list-item {
+  padding: 1rem;
+  // position: relative;
+  // overflow: hidden;
+  // display: inline-block;
+  // &:after {
+  //   content: "";
+  //   position: absolute;
+  //   left: -200%;
+  //   width: 200%;
+  //   height: 150%;
+  //   opacity: 0;
+  //   // transform: rotate(30deg);
+  //   background: rgba(255, 255, 255, 0.13);
+  //   background: linear-gradient(
+  //     to right,
+  //     rgba(255, 255, 255, 0.13) 0%,
+  //     rgba(255, 255, 255, 0.13) 77%,
+  //     rgba(255, 255, 255, 0.5) 92%,
+  //     rgba(255, 255, 255, 0.0) 100%
+  //   );
+  // }
+  // &:hover:after {
+  //   opacity: 1;
+  //   top: -30%;
+  //   left: -30%;
+  //   transition-property: left, top, opacity;
+  //   transition-duration: 0.7s, 0.7s, 0.15s;
+  //   transition-timing-function: ease;
+  // }
+  // &:active:after {
+  //   opacity: 0;
+  // }
+  &:hover {
+    background-color: pink;
+  }
+}
+
+.navbar-link {
+  font-family: styles.$fontFancy;
+  color: styles.$colorDark;
+  font-size: 1.5rem;
+}
