@@ -4,13 +4,24 @@
   width: 100%;
   display: flex;
   justify-content: center;
+  @include styles.xs {
+
+  }
+  @include styles.sm {
+    position: fixed;
+    top: 0;
+    
+  }
 }
 
 .links-list {
   display: inline-flex;
-  background-color: black;
   // padding: .75rem;
   height: auto;
+  background: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(10px);
+  border-radius: 0 0 0.75rem 0.75rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
   // width: auto;
   // margin-right: auto;
   // margin-left: auto;
@@ -57,13 +68,13 @@
   // &:active:after {
   //   opacity: 0;
   // }
-  &:hover {
-    background-color: pink;
-  }
 }
 
 .navbar-link {
   font-family: styles.$fontFancy;
   color: styles.$colorDark;
   font-size: 1.5rem;
+  &:hover {
+    color: styles.$colorMid;
+  }
 }
