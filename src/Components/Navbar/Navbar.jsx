@@ -1,5 +1,7 @@
 import React from 'react';
 import './Navbar.scss';
+import Dropdown from '../../Components/Dropdown';
+
 
 const Navbar = () => {
   const changeClass = (e) => {
@@ -27,6 +29,9 @@ const Navbar = () => {
           <a onClick={changeClass} className="navbar-link" href="#contact">contact</a>
         </li>
       </ul>
+      <div id="dd-menu">
+        <Dropdown />
+      </div>
     </nav>
   )
 }
