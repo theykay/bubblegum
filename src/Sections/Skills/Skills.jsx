@@ -3,7 +3,7 @@ import './Skills.scss';
 
 const Skills = () => {
   return (
-    <section id="skills">
+    <section id="skills" className="glass-card">
 
     </section>
   )

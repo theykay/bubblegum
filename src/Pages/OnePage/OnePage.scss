@@ -1,3 +1,90 @@
-@import '../../styles/main';
+@use '../../styles/main' as styles;
 
+#dd-menu {
+  @include styles.xs {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    padding: 0.5rem 1rem;
+    font-size: 2rem;
+    background: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(10px);
+    border-radius: 0 0 0.75rem 0.75rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    color: black;
+  }
+  @include styles.sm {
+    display: none;
+  }
+}
 
+#onepage-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: auto;
+  margin: 1rem;
+  @include styles.xs {
+    margin-top: 3rem;
+  }
+  @include styles.sm {
+    margin-top: 56px;
+  }
+}
+
+.glass-card {
+  box-sizing: border-box;
+  position: relative;
+  background: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(10px);
+  border-radius: 0.75rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  // margin: 2rem;
+  padding: 1rem;
+  flex-grow: 1;
+  width: 100%;
+  margin: 1rem 0;
+  display: flex;
+  @include styles.xs {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  @include styles.sm {
+    flex-direction: row;
+  }
+}
+
+#to-top {
+  & svg {
+    transform: rotate(180deg);
+  }
+  @include styles.xs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 1rem;
+    font-size: 2rem;
+    background: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(10px);
+    border-radius: 0.75rem 0.75rem 0 0;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    color: black;
+  }
+  @include styles.sm {
+    display: none;
+  }
+}

@@ -3,7 +3,7 @@ import './Projects.scss';
 
 const Projects = () => {
   return (
-    <section id="projects">
+    <section id="projects" className="glass-card">
 
     </section>
   )

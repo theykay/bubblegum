@@ -3,7 +3,7 @@ import './Contact.scss';
 
 const Contact = () => {
   return (
-    <section id="contact">
+    <section id="contact" className="glass-card">
 
     </section>
   )

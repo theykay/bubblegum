@@ -1,1 +1,9 @@
 @use '../../styles/main.scss' as styles;
+
+#profilePic {
+  width: 15rem;
+  height: auto;
+  border-radius: 100%;
+  transform: scaleX(-1);
+  // border: 1px solid rgba(255, 255, 255, 0.5);
+}
