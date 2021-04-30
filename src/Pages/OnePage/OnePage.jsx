@@ -1,6 +1,7 @@
 import React from 'react';
 import './OnePage.scss';
-import Navbar from '../../Components/Navbar';
+// import Navbar from '../../Components/Navbar';
+import TopMenu from '../../Components/TopMenu';
 import Clouds from '../../Components/Clouds';
 import About from '../../Sections/About';
 import Contact from '../../Sections/Contact';
@@ -11,7 +12,8 @@ import Skills from '../../Sections/Skills';
 const OnePage = () => {
   return (
     <>
-      <Navbar />
+      {/* <Navbar /> */}
+      <TopMenu />
       <Clouds />
       <section id="onepage-content">
         <About />
