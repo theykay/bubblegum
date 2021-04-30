@@ -4,10 +4,10 @@
   width: 100%;
   display: flex;
   justify-content: center;
+  z-index: 3;
   @include styles.xs {
-    flex-direction: column;
     position: absolute;
-    top: -226px;
+    top: 0;
   }
   @include styles.sm {
     position: fixed;
@@ -19,21 +19,28 @@
   display: inline-flex;
   // padding: .75rem;
   height: auto;
-  background: rgba(255, 255, 255, 0.4);
-  backdrop-filter: blur(10px);
-  border-radius: 0 0 0.75rem 0.75rem;
-  border: 1px solid rgba(255, 255, 255, 0.2);
   box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
   // width: auto;
   // margin-right: auto;
   // margin-left: auto;
   @include styles.xs {
+    background: white;
     flex-direction: column;
     width: auto;
     margin-right: auto;
     margin-left: auto;
+    flex-direction: column;
+    // display: block;
+    position: absolute;
+    top: -224px;
+    // z-index: 100;
+    // transform: translate3d(0,-226px,0);
   }
   @include styles.sm {
+    background: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(10px);
+    border-radius: 0 0 0.75rem 0.75rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);
     flex-direction: row;
     justify-content: center;
     align-items: space-between;
@@ -42,38 +49,7 @@
 
 .list-item {
   padding: 1rem;
-  text-shadow: 0 0 1px white;
-  // position: relative;
-  // overflow: hidden;
-  // display: inline-block;
-  // &:after {
-  //   content: "";
-  //   position: absolute;
-  //   left: -200%;
-  //   width: 200%;
-  //   height: 150%;
-  //   opacity: 0;
-  //   // transform: rotate(30deg);
-  //   background: rgba(255, 255, 255, 0.13);
-  //   background: linear-gradient(
-  //     to right,
-  //     rgba(255, 255, 255, 0.13) 0%,
-  //     rgba(255, 255, 255, 0.13) 77%,
-  //     rgba(255, 255, 255, 0.5) 92%,
-  //     rgba(255, 255, 255, 0.0) 100%
-  //   );
-  // }
-  // &:hover:after {
-  //   opacity: 1;
-  //   top: -30%;
-  //   left: -30%;
-  //   transition-property: left, top, opacity;
-  //   transition-duration: 0.7s, 0.7s, 0.15s;
-  //   transition-timing-function: ease;
-  // }
-  // &:active:after {
-  //   opacity: 0;
-  // }
+  text-shadow: 0 0 1px black;
 }
 
 .navbar-link {
@@ -85,9 +61,12 @@
   }
 }
 
-#dd-menu {
+#dd-button {
   @include styles.xs {
+    position: fixed;
+    top: 0;
     width: auto;
+    height: auto;
     margin-right: auto;
     margin-left: auto;
     display: flex;
@@ -97,9 +76,8 @@
     text-align: center;
     padding: 0 0.5rem 0.5rem 1rem;
     font-size: 2rem;
-    background-color: white;
-    // background: rgba(255, 255, 255, 0.4);
-    // backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(10px);
     border-radius: 0 0 0.75rem 0.75rem;
     border: 1px solid rgba(255, 255, 255, 0.2);
     border-top: 0;
