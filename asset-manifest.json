@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/bubblegum/static/css/main.744350af.chunk.css",
-    "main.js": "/bubblegum/static/js/main.cb5f1be9.chunk.js",
-    "main.js.map": "/bubblegum/static/js/main.cb5f1be9.chunk.js.map",
+    "main.css": "/bubblegum/static/css/main.35ee6031.chunk.css",
+    "main.js": "/bubblegum/static/js/main.5c1789c0.chunk.js",
+    "main.js.map": "/bubblegum/static/js/main.5c1789c0.chunk.js.map",
     "runtime-main.js": "/bubblegum/static/js/runtime-main.d4c7a450.js",
     "runtime-main.js.map": "/bubblegum/static/js/runtime-main.d4c7a450.js.map",
     "static/js/2.187768c5.chunk.js": "/bubblegum/static/js/2.187768c5.chunk.js",
     "static/js/2.187768c5.chunk.js.map": "/bubblegum/static/js/2.187768c5.chunk.js.map",
     "index.html": "/bubblegum/index.html",
-    "static/css/main.744350af.chunk.css.map": "/bubblegum/static/css/main.744350af.chunk.css.map",
+    "static/css/main.35ee6031.chunk.css.map": "/bubblegum/static/css/main.35ee6031.chunk.css.map",
     "static/js/2.187768c5.chunk.js.LICENSE.txt": "/bubblegum/static/js/2.187768c5.chunk.js.LICENSE.txt",
     "static/media/CoLab.ae02fbf1.png": "/bubblegum/static/media/CoLab.ae02fbf1.png",
     "static/media/KayMurray.1265922c.pdf": "/bubblegum/static/media/KayMurray.1265922c.pdf",
@@ -22,7 +22,7 @@
   "entrypoints": [
     "static/js/runtime-main.d4c7a450.js",
     "static/js/2.187768c5.chunk.js",
-    "static/css/main.744350af.chunk.css",
-    "static/js/main.cb5f1be9.chunk.js"
+    "static/css/main.35ee6031.chunk.css",
+    "static/js/main.5c1789c0.chunk.js"
   ]
 }
