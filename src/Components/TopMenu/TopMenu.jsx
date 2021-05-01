@@ -71,7 +71,6 @@ const TopMenu = () => {
       setAllowDown(temp < 0);
       setAllowUp(temp > -176);
       navbar.setAttribute('style', `top: ${temp}px`);
-      pullTag.setAttribute('style', `top: ${temp+176}px`);
     }
   };
   
@@ -79,13 +78,19 @@ const TopMenu = () => {
     e.preventDefault();
     let temp = window.getComputedStyle(navbar).top;
     temp = parseInt(temp.replace("px",""));
-    const finishingTouch = e.changedTouches[0].clientY;
-    console.log(direction);
-    if (direction === "d") {
-      // smooth animate open
-    } else if (direction === "u") {
-      // smooth animate closed
+    // const finishingTouch = e.changedTouches[0].clientY;
+
+    // snaps to whichever position it's closest to
+    if (temp >= -88 || temp <= 0) {
+      navbar.setAttribute('style', 'top: 0px');
+    } else if (temp >= -176 || temp < -88) {
+      navbar.setAttribute('style', 'top: -176px');
     }
+    // if (direction === "d") {
+    //   // smooth animate open
+    // } else if (direction === "u") {
+    //   // smooth animate closed
+    // }
   };
 
   const startTouch = (e) => {
