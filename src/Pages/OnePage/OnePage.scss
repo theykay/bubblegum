@@ -20,13 +20,13 @@
 .glass-card {
   box-sizing: border-box;
   position: relative;
-  background: rgba(255, 255, 255, 0.4);
+  background: rgba(255, 255, 255, 0.6);
   backdrop-filter: blur(10px);
   border-radius: 0.75rem;
   border: 1px solid rgba(255, 255, 255, 0.2);
   box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
   // margin: 2rem;
-  padding: 1rem;
+  padding: 2rem;
   flex-grow: 1;
   width: 100%;
   margin: 1rem 0;
@@ -38,6 +38,32 @@
   }
   @include styles.sm {
     flex-direction: row;
+  }
+}
+
+.glass-card-head {
+  font-family: styles.$fontFancy;
+  font-size: 2rem;
+  color: styles.$colorDark;
+  padding-bottom: 1rem;
+  line-height: 1;
+}
+
+.glass-card-content {
+  font-family: styles.$fontContent;
+  font-size: 1rem;
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+  & p {
+    padding: 0;
+    margin: 0;
+  }
+  @include styles.xs {
+    margin-top: 1rem;
+  }
+  @include styles.sm {
+
   }
 }
 
