@@ -10,7 +10,7 @@ const TopMenu = () => {
   const [startY, setStartY] = useState(0);
   const [allowDown, setAllowDown] = useState(true);
   const [allowUp, setAllowUp] = useState(true);
-  const [direction, setDirection] = useState("");
+  // const [direction, setDirection] = useState("");
 
   useEffect(() => {
     setNavbar(document.getElementById('header'));
@@ -49,12 +49,12 @@ const TopMenu = () => {
       setAllowUp(true);  
     }
     const progressY = startY - e.touches[0].clientY;
-    setDirection(progressY > 0 )
+    // setDirection(progressY > 0 )
     let translation = progressY > 0 ? parseInt(-Math.abs(progressY)) : parseInt(Math.abs(progressY));
     // 176px movement allowed
     
     // for use in endTouch
-    setDirection(translation > 0 ? "d" : "u");
+    // setDirection(translation > 0 ? "d" : "u");
     // console.log(direction);
 
     if (temp + translation > 0) {

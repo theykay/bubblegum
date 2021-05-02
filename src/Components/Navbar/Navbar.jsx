@@ -75,9 +75,9 @@ const Navbar = () => {
   };
   
   const endTouch = (e) => {
-    let temp = window.getComputedStyle(pullMenu).top;
-    temp = parseInt(temp.replace("px",""));
-    const finishingTouch = e.changedTouches[0].clientY;
+    // let temp = window.getComputedStyle(pullMenu).top;
+    // temp = parseInt(temp.replace("px",""));
+    // const finishingTouch = e.changedTouches[0].clientY;
     console.log(direction);
     if (direction === "d") {
       // smooth animate open
