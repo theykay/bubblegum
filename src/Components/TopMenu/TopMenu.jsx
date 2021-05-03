@@ -15,7 +15,7 @@ const TopMenu = () => {
   useEffect(() => {
     setNavbar(document.getElementById('header'));
     setPullTag(document.getElementById('dd-tag'));
-    window.addEventListener('touchmove', window.preventDefault, {passive: false});
+    window.addEventListener('touchmove', window.preventDefault, { passive: false });
   }, []);
 
   const changeClass = (e) => {
@@ -46,13 +46,13 @@ const TopMenu = () => {
       setAllowUp(false);
     } else {
       setAllowDown(true);
-      setAllowUp(true);  
+      setAllowUp(true);
     }
     const progressY = startY - e.touches[0].clientY;
     // setDirection(progressY > 0 )
     let translation = progressY > 0 ? parseInt(-Math.abs(progressY)) : parseInt(Math.abs(progressY));
     // 176px movement allowed
-    
+
     // for use in endTouch
     // setDirection(translation > 0 ? "d" : "u");
     // console.log(direction);
@@ -73,11 +73,11 @@ const TopMenu = () => {
       navbar.setAttribute('style', `top: ${temp}px`);
     }
   };
-  
+
   const endTouch = (e) => {
     e.preventDefault();
     let temp = window.getComputedStyle(navbar).top;
-    temp = parseInt(temp.replace("px",""));
+    temp = parseInt(temp.replace("px", ""));
     // const finishingTouch = e.changedTouches[0].clientY;
 
     // snaps to whichever position it's closest to
@@ -108,26 +108,33 @@ const TopMenu = () => {
     }
   };
 
+  const toggleDropdown = () => {
+    const headEl = document.getElementById('header');
+    headEl.classList.toggle('show');
+  }
+
   return (
-    <nav id="header" className="navbar">
-      <ul id="dd-content" className="links-list">
-        <li className="list-item">
-          <a onClick={changeClass} className="navbar-link" href="#about">about</a>
-        </li>
-        <li className="list-item">
-          <a onClick={changeClass} className="navbar-link" href="#skills">skills</a>
-        </li>
-        <li className="list-item">
-          <a onClick={changeClass} className="navbar-link" href="#projects">projects</a>
-        </li>
-        <li className="list-item">
-          <a onClick={changeClass} className="navbar-link" href="#contact">contact</a>
-        </li>
-      </ul>
-      <div id="dd-tag" onTouchStart={startTouch}>
-        <Dropdown />
-      </div>
-    </nav>
+    <div id="top-menu">
+      <nav id="header" className="navbar">
+        <ul id="dd-content" className="links-list">
+          <li className="list-item">
+            <a onClick={changeClass} className="navbar-link" href="#about">about</a>
+          </li>
+          <li className="list-item">
+            <a onClick={changeClass} className="navbar-link" href="#skills">skills</a>
+          </li>
+          <li className="list-item">
+            <a onClick={changeClass} className="navbar-link" href="#projects">projects</a>
+          </li>
+          <li className="list-item">
+            <a onClick={changeClass} className="navbar-link" href="#contact">contact</a>
+          </li>
+        </ul>
+        <div id="dd-tag" onClick={toggleDropdown} >
+          <Dropdown />
+        </div>
+      </nav>
+    </div>
   )
 }
 

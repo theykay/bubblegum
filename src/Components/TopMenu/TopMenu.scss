@@ -1,26 +1,38 @@
 @use '../../styles/main' as styles;
 
+#top-menu {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  // display: inline-block;
+  z-index: 3;
+}
+
 #header {
   width: 100%;
   display: flex;
   justify-content: center;
-  z-index: 3;
   @include styles.xs {
-    position: absolute;
+    position: relative;
     top: -176px;
     flex-direction: column;
     align-items: center;
+    transition: top .1s ease-out;
   }
   @include styles.sm {
-    position: fixed;
+    position: relative;
     top: 0;
   }
+}
+
+.show {
+  top: 0 !important;
 }
 
 .links-list {
   display: inline-flex;
   list-style-type: none;
-  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+  
   @include styles.xs {
     background: white;
     flex-direction: column;
@@ -78,7 +90,7 @@
     border-radius: 0 0 0.75rem 0.75rem;
     border: 1px solid rgba(255, 255, 255, 0.2);
     border-top: 0;
-    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+    // box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
   }
   @include styles.sm {
     display: none;
