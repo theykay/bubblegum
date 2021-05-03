@@ -1,1 +1,31 @@
 @use '../../styles/main.scss' as styles;
+
+#technologies {
+  display: flex;
+  flex-flow: row wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: space-around;
+  padding: 0;
+  margin: 0;
+}
+
+.techItem {
+  display: inline-flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  @include styles.xs {
+    padding: 0.25rem;
+    width: 40%;
+  }
+  @include styles.sm {
+    padding: 0.5rem 0.5rem;
+    width: 18%;
+  }
+}
+
+.techIcon {
+  color: styles.$colorDark;
+  font-size: 2rem;
+}

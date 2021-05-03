@@ -1,1 +1,60 @@
 @use '../../styles/main.scss' as styles;
+
+.me-links {
+  display: flex;
+  @include styles.xs {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: fit-content;
+    margin: 0 auto;
+    padding: 0;
+  }
+  @include styles.sm {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    // margin-top: 1rem;
+    margin: 0;
+    width: 100%;
+  }
+}
+
+#link-head {
+  @include styles.xs {
+    // display: none;
+  }
+  @include styles.sm {
+    font-size: 2rem;
+  }
+}
+
+.me-links-item {
+  list-style-type: none;
+  @include styles.xs {
+    line-height: 1.5;
+  }
+}
+
+.prof-link {
+  text-decoration: none;
+  color: styles.$colorDark;
+  font-family: styles.$fontContent;
+  font-size: 1.5rem;
+  &:link {
+
+  }
+  &:visited {
+    color: styles.$colorDark;
+  }
+  &:hover {
+
+  }
+  &:active {
+    color: styles.$colorMid;
+  }
+}
+
+.icon {
+  padding-right: 0.5rem;
+}
