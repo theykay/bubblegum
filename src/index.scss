@@ -1,5 +1,9 @@
 @use './styles/main.scss' as styles;
 
+html {
+  scroll-behavior: smooth;
+}
+
 // html, body {
 //   overflow: hidden;
 // }
