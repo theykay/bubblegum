@@ -119,16 +119,16 @@ const TopMenu = () => {
       <nav id="header" className="navbar">
         <ul id="dd-content" className="links-list">
           <li className="list-item">
-            <a onClick={changeClass} className="navbar-link" href="#about">about</a>
+            <a onClick={(e) => {changeClass(e); toggleDropdown(e)}} className="navbar-link" href="#about">about</a>
           </li>
           <li className="list-item">
-            <a onClick={changeClass} className="navbar-link" href="#skills">skills</a>
+            <a onClick={(e) => {changeClass(e); toggleDropdown(e)}} className="navbar-link" href="#skills">skills</a>
           </li>
           <li className="list-item">
-            <a onClick={changeClass} className="navbar-link" href="#projects">projects</a>
+            <a onClick={(e) => {changeClass(e); toggleDropdown(e)}} className="navbar-link" href="#projects">projects</a>
           </li>
           <li className="list-item">
-            <a onClick={changeClass} className="navbar-link" href="#contact">contact</a>
+            <a onClick={(e) => {changeClass(e); toggleDropdown(e)}} className="navbar-link" href="#contact">contact</a>
           </li>
         </ul>
         <div id="dd-tag" onClick={toggleDropdown} >
