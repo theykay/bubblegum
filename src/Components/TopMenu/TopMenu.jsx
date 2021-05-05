@@ -99,7 +99,7 @@ const TopMenu = () => {
   //     pullTag.addEventListener('touchend', endTouch);
   //   }
   // };
-
+  
   const changeClass = (e) => {
     const all = document.getElementsByClassName('navbar-link');
     for (let i = 0; i < all.length; i++) {

@@ -1,1 +1,10 @@
 @use '../../styles/main.scss' as styles;
+
+#projects-card {
+  position: relative;
+}
+
+#projects {
+  position: absolute;
+  top: -4rem;
+}

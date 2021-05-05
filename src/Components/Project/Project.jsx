@@ -37,19 +37,19 @@ const Project = (props) => {
   return (
     <>
       {/* <Modal handleClose={hideModal} props={props} /> */}
-      <article className="projectCard" onClick={showModal}>
-        <img className="cardImage" src={props.image} alt={props.title} />
-        <section className='cardText'>
+      <article className="project-card" onClick={showModal}>
+        <img className="card-image" src={props.image} alt={props.title} />
+        <section className='card-text'>
           <h3>{props.title}</h3>
           <p>{props.info}</p>
-          <ul className="mediaList">languages/tools:
+          <ul className="card-media-list">languages/tools:
             {props.media.map((medium, index) => {
             return <li key={medium}>{medium}</li>
           })}
           </ul>
-          <div className="cardLinks">
-            {props.repo && <a className="cardLink" href={props.repo} target="_blank" rel="noreferrer">Repository</a>}
-            {props.site && <a className="cardLink" href={props.site} target="_blank" rel="noreferrer">Live Site</a>}
+          <div className="card-links">
+            {props.repo && <a className="card-link" href={props.repo} target="_blank" rel="noreferrer">Repository</a>}
+            {props.site && <a className="card-link" href={props.site} target="_blank" rel="noreferrer">Live Site</a>}
           </div>
         </section>
       </article>

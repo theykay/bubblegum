@@ -1,27 +1,24 @@
-@import '../../styles/main.scss';
+@use '../../styles/main.scss' as styles;
 
-.projectCard {
-  border: solid 2px $colorLight;
+.project-card {
+  border: solid 2px styles.$colorLight;
   margin: 0 1rem 1rem 1rem;
   padding: .5rem;
   border-radius: .25rem;
   height: auto;
-  @include xs {
+  background: styles.$colorLight;
+  box-shadow: 0 0 7px 1px rgba(0,0,0,0.4);
+  @include styles.xs {
     position: relative;
     display: block;
     overflow: hidden;
-    &:hover {
-      .cardText {
-        display: flex;
-      }
-    }
   }
-  @include sm {
+  @include styles.sm {
     padding: 1rem;
     display: flex;
     flex-direction: row;
   }
-  @include md {
+  @include styles.md {
     position: relative;
     display: flex;
     align-items: space-around;
@@ -30,25 +27,25 @@
     // width: 40%;
     width: calc(50% - 4.5rem);
     margin: 0 0 1rem 0;
-    &:hover {
-      .cardText {
-        display: flex;
-      }
-    }
+    // &:hover {
+    //   .cardText {
+    //     display: flex;
+    //   }
+    // }
   }
 }
 
-.cardImage {
+.card-image {
   border-radius: .25rem;
   margin-bottom: auto;
-  @include xs {
+  @include styles.xs {
     width: 100%;
   }
-  @include sm {
+  @include styles.sm {
     width: 45%;
     margin-right: 2rem;
   }
-  @include md {
+  @include styles.md {
     // max-width: 18rem;
     // max-height: 17rem;
     width: auto;
@@ -57,41 +54,42 @@
   }
 }
 
-.cardText {
+.card-text {
   & h3 {
-    font-family: $fontFancy;
-    color: $colorDark;
+    font-family: styles.$fontFancy;
+    color: styles.$colorDark;
     font-size: 2rem;
   }
   & p {
-    font-family: $fontContent;
-    color: $colorDark;
+    font-family: styles.$fontContent;
+    color: styles.$colorDark;
   }
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  @include xs {
-    height: stretch;
-    width: auto;
-    padding: 1rem;
-    opacity: 0;
-    background-color: transparentize($colorLight, .02);
-    position: absolute;
-    top: 0;
-    left: 0;
-    transition: all 400ms ease-out;
-    &:hover {
-      opacity: 1;
-    }
+  @include styles.xs {
+    display: none;
+    // height: stretch;
+    // width: auto;
+    // padding: 1rem;
+    // opacity: 0;
+    // background-color: transparentize(styles.$colorLight, .02);
+    // position: absolute;
+    // top: 0;
+    // left: 0;
+    // transition: all 400ms ease-out;
+    // &:hover {
+    //   opacity: 1;
+    // }
   }
-  @include sm {
+  @include styles.sm {
     margin-right: auto;
     justify-content: flex-end;
     & * {
       margin-top: 1rem;
     }
   }
-  @include md {
+  @include styles.md {
     justify-content: space-between;
     & * {
       margin-top: 0;
@@ -99,7 +97,7 @@
     height: stretch;
     width: auto;
     opacity: 0;
-    background-color: transparentize($colorLight, .02);
+    background-color: transparentize(styles.$colorLight, .02);
     position: absolute;
     top: 0;
     left: 0;
@@ -111,27 +109,27 @@
   }
 }
 
-.mediaList {
-  font-family: $fontFancy;
-  color: $colorDark;
+.media-list {
+  font-family: styles.$fontFancy;
+  color: styles.$colorDark;
   width: 100%;
   & li {
     // width: 25%;
-    font-family: $fontContent;
+    font-family: styles.$fontContent;
     margin: 0;
   }
 }
 
-.cardLinks {
+.card-links {
   display: flex;
   justify-content: flex-start;
 }
 
-.cardLink {
-  color: $colorDark;
-  font-family: $fontFancy;
+.card-link {
+  color: styles.$colorDark;
+  font-family: styles.$fontFancy;
   padding: .75rem 1rem;
-  background-color: $colorMLight;
+  background-color: styles.$colorMLight;
   border-radius: .5rem;
   margin-right: auto;
 }

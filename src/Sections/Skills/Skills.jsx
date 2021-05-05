@@ -6,7 +6,8 @@ import { faHtml5, faCss3Alt, faSass, faJsSquare, faReact, faBootstrap, faNodeJs,
 
 const Skills = () => {
   return (
-    <section id="skills" className="glass-card">
+    <section id="skills-card" className="glass-card">
+      <div id="skills"></div>
       <header className="glass-card-head"><h2>skills</h2></header>
       <article className="glass-card-content">
       <ul id="technologies">

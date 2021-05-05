@@ -1,5 +1,14 @@
 @use '../../styles/main.scss' as styles;
 
+#contact-card {
+  position: relative;
+}
+
+#contact {
+  position: absolute;
+  top: -4rem;
+}
+
 .me-links {
   display: flex;
   @include styles.xs {

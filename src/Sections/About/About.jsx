@@ -4,7 +4,8 @@ import myPic from '../../images/profile.jpeg';
 
 const About = () => {
   return (
-    <section id="about" className="glass-card">
+    <section id="about-card" className="glass-card">
+      <div id="about"></div>
       <header className="glass-card-head"><h2>about me</h2></header>
       <img id="profilePic" src={myPic} alt="me artfully draped around an overturned chair" />
       <article className="glass-card-content">

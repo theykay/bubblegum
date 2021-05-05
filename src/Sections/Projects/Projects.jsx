@@ -52,9 +52,10 @@ const Projects = () => {
   ];
 
   return (
-    <section id="projects" className="glass-card">
+    <section id="projects-card" className="glass-card">
+      <div id="projects"></div>
       <header className="glass-card-head"><h2>projects</h2></header>
-      <section id="webProjects">
+      <section id="web-projects">
         {webProjects.map((project, index) => {
           return (
             <Project 

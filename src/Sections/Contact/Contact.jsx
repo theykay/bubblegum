@@ -8,7 +8,8 @@ import Resume from '../../images/KayMurray.pdf';
 
 const Contact = () => {
   return (
-    <section id="contact" className="glass-card">
+    <section id="contact-card" className="glass-card">
+      <div id="contact"></div>
       <header className="glass-card-head"><h2 id="link-head"><FontAwesomeIcon id="link-icon" icon={faExternalLinkAlt} /> Links</h2></header>
         <ul className="me-links">
           <li className="me-links-item">

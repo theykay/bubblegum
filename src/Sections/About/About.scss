@@ -1,5 +1,14 @@
 @use '../../styles/main.scss' as styles;
 
+#about-card {
+  position: relative;
+}
+
+#about {
+  position: absolute;
+  top: -4rem;
+}
+
 #profilePic {
   width: 15rem;
   height: auto;
