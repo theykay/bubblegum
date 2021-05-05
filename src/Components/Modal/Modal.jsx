@@ -5,7 +5,7 @@ const Modal = ({ handleClose, props }) => {
   return (
     <div className='modal'>
       <section className="modal-main">
-        <h3>{props.title}</h3>
+        <h3 className="modal-header">{props.title}</h3>
         <p>{props.info}</p>
         <ul className="mediaList">languages/tools:
         {props.media.map((medium, index) => {
