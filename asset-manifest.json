@@ -1,22 +1,27 @@
 {
   "files": {
-    "main.css": "/bubblegum/static/css/main.3f26d9cb.chunk.css",
-    "main.js": "/bubblegum/static/js/main.ff0b7d0a.chunk.js",
-    "main.js.map": "/bubblegum/static/js/main.ff0b7d0a.chunk.js.map",
+    "main.css": "/bubblegum/static/css/main.3578dc9f.chunk.css",
+    "main.js": "/bubblegum/static/js/main.b7868c22.chunk.js",
+    "main.js.map": "/bubblegum/static/js/main.b7868c22.chunk.js.map",
     "runtime-main.js": "/bubblegum/static/js/runtime-main.d4c7a450.js",
     "runtime-main.js.map": "/bubblegum/static/js/runtime-main.d4c7a450.js.map",
-    "static/js/2.e80ebf6f.chunk.js": "/bubblegum/static/js/2.e80ebf6f.chunk.js",
-    "static/js/2.e80ebf6f.chunk.js.map": "/bubblegum/static/js/2.e80ebf6f.chunk.js.map",
+    "static/js/2.8b318b6a.chunk.js": "/bubblegum/static/js/2.8b318b6a.chunk.js",
+    "static/js/2.8b318b6a.chunk.js.map": "/bubblegum/static/js/2.8b318b6a.chunk.js.map",
     "index.html": "/bubblegum/index.html",
-    "static/css/main.3f26d9cb.chunk.css.map": "/bubblegum/static/css/main.3f26d9cb.chunk.css.map",
-    "static/js/2.e80ebf6f.chunk.js.LICENSE.txt": "/bubblegum/static/js/2.e80ebf6f.chunk.js.LICENSE.txt",
+    "static/css/main.3578dc9f.chunk.css.map": "/bubblegum/static/css/main.3578dc9f.chunk.css.map",
+    "static/js/2.8b318b6a.chunk.js.LICENSE.txt": "/bubblegum/static/js/2.8b318b6a.chunk.js.LICENSE.txt",
+    "static/media/CoLab.ae02fbf1.png": "/bubblegum/static/media/CoLab.ae02fbf1.png",
     "static/media/KayMurray.1265922c.pdf": "/bubblegum/static/media/KayMurray.1265922c.pdf",
-    "static/media/profile.a6b22dfc.jpeg": "/bubblegum/static/media/profile.a6b22dfc.jpeg"
+    "static/media/amongUs.d87932de.png": "/bubblegum/static/media/amongUs.d87932de.png",
+    "static/media/bookVsMovie.6cb098c4.png": "/bubblegum/static/media/bookVsMovie.6cb098c4.png",
+    "static/media/profile.a6b22dfc.jpeg": "/bubblegum/static/media/profile.a6b22dfc.jpeg",
+    "static/media/scheduler.9d5703b4.gif": "/bubblegum/static/media/scheduler.9d5703b4.gif",
+    "static/media/weather.f17c887b.png": "/bubblegum/static/media/weather.f17c887b.png"
   },
   "entrypoints": [
     "static/js/runtime-main.d4c7a450.js",
-    "static/js/2.e80ebf6f.chunk.js",
-    "static/css/main.3f26d9cb.chunk.css",
-    "static/js/main.ff0b7d0a.chunk.js"
+    "static/js/2.8b318b6a.chunk.js",
+    "static/css/main.3578dc9f.chunk.css",
+    "static/js/main.b7868c22.chunk.js"
   ]
 }
