@@ -6,9 +6,9 @@ import { faTimes } from '@fortawesome/free-solid-svg-icons';
 
 const Modal = ({ handleClose, props }) => {
   return (
-    <div className='modal'>
+    <div className='modal' onClick={handleClose}>
 
-      <section className="modal-main">
+      <section className="modal-main" onClick={e => e.stopPropagation()}>
         <FontAwesomeIcon className="modal-close" icon={faTimes} onClick={handleClose} />
         <header className="modal-header"><h3>{props.title}</h3></header>
         <section className="modal-content">
