@@ -1,6 +1,6 @@
 /*
   Permissions-Policy: interest-cohort=()
-  Content-Security-Policy: default-src 'self'; font-src fonts.gstatic.com; style-src 'self' fonts.googleapis.com; script-src 'sha256-B7VrRhLGVZNecTOQzM9Xdme/p4BvvYSGW5i3/XMfRlo='
+  Content-Security-Policy: default-src 'self'; font-src fonts.gstatic.com; style-src 'self' fonts.googleapis.com; script-src 'self'; 
   X-Frame-Options: SAMEORIGIN
   X-Content-Type-Options: nosniff
   Referrer-Policy: strict-origin-when-cross-origin
