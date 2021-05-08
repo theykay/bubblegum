@@ -2,12 +2,12 @@ import React from 'react';
 import './OnePage.scss';
 // import Navbar from '../../Components/Navbar';
 import TopMenu from '../../Components/TopMenu';
+import ToTop from '../../Components/ToTop';
 import Clouds from '../../Components/Clouds';
 import About from '../../Sections/About';
 import Contact from '../../Sections/Contact';
 import Projects from '../../Sections/Projects';
 import Skills from '../../Sections/Skills';
-// import ToTop from '../../images/toTop.svg';
 
 const OnePage = () => {
   return (
@@ -21,9 +21,7 @@ const OnePage = () => {
         <Projects />
         <Contact />
       </section>
-      <div id="to-top">
-        {/* <ToTop /> */}
-      </div>
+      <ToTop />
     </>
   )
 };
