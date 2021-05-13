@@ -44,7 +44,7 @@ const Project = (props) => {
     <>
       {/* <Modal handleClose={hideModal} props={props} /> */}
       <article className="project-card" onClick={showModal}>
-        <header className="project-card-title hideable">
+        <header className="project-card-header hideable">
           <h3>{props.title}</h3>
         </header>
         <img className="card-image" src={props.image} alt={props.title} />
@@ -55,10 +55,10 @@ const Project = (props) => {
             return <li key={medium}>{medium}</li>
           })}
           </ul>
-          <div className="card-links">
+          <section className="card-links">
             {props.repo && <a className="card-link" href={props.repo} target="_blank" rel="noreferrer">Repository</a>}
             {props.site && <a className="card-link" href={props.site} target="_blank" rel="noreferrer">Live Site</a>}
-          </div>
+          </section>
         </section>
       </article>
     </>
