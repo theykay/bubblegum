@@ -30,7 +30,7 @@ const Project = (props) => {
 
   const showModal = () => {
     // setShow(true);
-    window.innerWidth<768 && render(<Modal handleClose={hideModal} props={{...props}} />, modalRoot);
+    window.innerWidth<576 && render(<Modal handleClose={hideModal} props={{...props}} />, modalRoot);
   }
 
 

@@ -16,7 +16,7 @@
     // margin-top: 0;
   }
   @include styles.sm {
-    margin-top: 56px;
+    margin-top: 3.25rem;
   }
 }
 
@@ -29,18 +29,21 @@
   border: 1px solid rgba(255, 255, 255, 0.2);
   box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
   // margin: 2rem;
-  padding: 2rem;
+  padding: 1rem;
   flex-grow: 1;
   width: 100%;
   margin: 1rem 0;
   display: flex;
-  @include styles.xs {
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-  }
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  // @include styles.xs {
+  // }
   @include styles.sm {
-    flex-direction: row;
+    padding: 1rem;
+  }
+  @include styles.md {
+    
   }
 }
 
@@ -60,16 +63,14 @@
   font-size: 1rem;
   color: styles.$colorDark;
   margin: 0;
-  padding: 0;
+  padding: 0 1rem;
   line-height: 1.5;
   & p {
     padding: 0;
     margin: 0;
   }
   @include styles.xs {
-    margin-top: 1rem;
   }
   @include styles.sm {
-
   }
 }
