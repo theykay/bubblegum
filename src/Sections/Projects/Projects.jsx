@@ -14,24 +14,24 @@ const Projects = () => {
       title: "CoLab",
       info: "Way to connect individuals looking to collaborate with others in their profession. Currently focused on musicians.",
       media: ['ReactJS', 'Express.js', 'Node.js', 'MongoDB'],
-      site: 'https://afternoon-eyrie-78094.herokuapp.com/',
-      repo: 'https://github.com/Rxjas/CoLab',
+      site: 'https://protected-chamber-73286.herokuapp.com/',
+      repo: 'https://github.com/theykay/CoLab',
     },
     {
       image: AmongUs,
       title: "The Smartest Among Us",
       info: "Web app to play quizzes. Play randomly-generated quizzes, play quizzes with global score leader-boards, signup and login to create your own quizzes to share with friends.",
       media: ["SQL", "sequelize", "Handlebars"],
-      site: "https://the-smartest-amoung-us.herokuapp.com/",
-      repo: "https://github.com/Diegopie/The-Smartest-Among-Us"
+      site: "https://glacial-inlet-88838.herokuapp.com/",
+      repo: "https://github.com/theykay/The-Smartest-Among-Us"
     },
     {
       image: bookVMovie,
       title: "Book vs Movie",
       info: "Compare ratings between a book and the movie based on it",
       media: ["goodreads API", "omdb API"],
-      site: "https://uofu-project-1.github.io/Book-vs-Movie/",
-      repo:"https://github.com/UofU-Project-1/Book-vs-Movie"
+      site: "https://theykay.github.io/Book-vs-Movie/",
+      repo:"https://github.com/theykay/Book-vs-Movie"
     },
     {
       image: scheduler,
