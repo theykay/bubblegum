@@ -25,15 +25,18 @@ Site built using ReactJS, styled with SCSS, hosted on Netlify.
 * HTML5
 * SCSS
 * JavaScript
+* Node.js
+* Express
 
 ## Links
 [Site](https://www.theykay.dev)\
-[Repository](https://github.com/theykay/bubblegum)
+[Repository](https://github.com/theykay/bubblegum)\
+(If I'm working on a newer version, it'll be [here](https://theykay.github.io/bubblegum)!)
 
 ## Contact
-Contact me!\
+Follow my work or get in touch!\
 Github: [theykay](https://github.com/theykay)\
 Email: [murraykyleb@gmail.com](mailto:murraykyleb@gmail.com)
 
 ## License
-This project is under the [MIT](https://choosealicense.com/licenses/mit/) license
+This project is covered by the [MIT](https://choosealicense.com/licenses/mit/) license
