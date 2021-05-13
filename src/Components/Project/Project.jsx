@@ -36,7 +36,7 @@ const Project = (props) => {
 
   const showModal = () => {
     // setShow(true);
-    window.innerWidth<576 && render(<Modal handleClose={hideModal} props={{...props}} />, modalRoot);
+    window.innerWidth < 576 && render(<Modal handleClose={hideModal} props={{ ...props }} />, modalRoot);
   }
 
 
@@ -47,7 +47,9 @@ const Project = (props) => {
         <header className="project-card-header hideable">
           <h3>{props.title}</h3>
         </header>
-        <img className="card-image" src={props.image} alt={props.title} />
+        <div className="card-image-div">
+          <img className="card-image" src={props.image} alt={props.title} />
+        </div>
         <section className='card-text hideable'>
           <p>{props.info}</p>
           <ul className="card-media-list">languages/tools:
