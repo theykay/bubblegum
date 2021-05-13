@@ -1,6 +1,7 @@
 {
   "name": "bubblegum",
   "version": "0.1.0",
+  "homepage": "https://theykay.github.io/bubblegum",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.35",
@@ -20,12 +21,18 @@
     "sass": "^1.32.11",
     "web-vitals": "^1.0.1"
   },
+  "devDependencies": {
+    "gh-pages": "^3.1.0"
+  },
   "scripts": {
     "start:node": "node index.js",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "yarn run build",
+    "deploy": "gh-pages -d build",
+    "pages": "yarn predeploy && yarn deploy"
   },
   "eslintConfig": {
     "extends": [

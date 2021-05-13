@@ -1,0 +1,83 @@
+@use '../../styles/main.scss' as styles;
+
+#contact-card {
+  position: relative;
+}
+
+#contact {
+  position: absolute;
+  top: -4rem;
+}
+
+.me-links {
+  display: flex;
+  @include styles.xs {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: fit-content;
+    margin: 0 auto;
+    padding: 0;
+  }
+  @include styles.sm {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0;
+    margin-top: 0.5rem;
+    padding: 0;
+    width: 100%;
+  }
+}
+
+#link-head {
+  @include styles.xs {
+    // display: none;
+  }
+  @include styles.sm {
+    font-size: 2rem;
+  }
+}
+
+.me-links-item {
+  list-style-type: none;
+  @include styles.xs {
+    line-height: 1.5;
+  }
+}
+
+.prof-link {
+  text-decoration: none;
+  color: styles.$colorDark;
+  font-family: styles.$fontContent;
+  font-size: 1.5rem;
+  // &:link {
+
+  // }
+  &:visited {
+    color: styles.$colorDark;
+  }
+  &:hover {
+    color: styles.$colorMid;
+    text-decoration: underline;
+  }
+  &:active {
+    color: styles.$colorMid;
+  }
+  & p {
+    padding: 0;
+    margin: 0;
+  }
+  @include styles.md {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.icon {
+  padding-right: 0.5rem;
+  @include styles.md {
+    padding: 0;
+  }
+}

@@ -1,0 +1,89 @@
+@use '../../styles/main' as styles;
+
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  z-index: 3;
+  @include styles.xs {
+    position: absolute;
+    top: 0;
+  }
+  @include styles.sm {
+    position: fixed;
+    top: 0;
+  }
+}
+
+.links-list {
+  display: inline-flex;
+  // padding: .75rem;
+  height: auto;
+  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+  // width: auto;
+  // margin-right: auto;
+  // margin-left: auto;
+  @include styles.xs {
+    background: white;
+    flex-direction: column;
+    width: auto;
+    margin-right: auto;
+    margin-left: auto;
+    flex-direction: column;
+    // display: block;
+    position: absolute;
+    top: -224px;
+    // z-index: 100;
+    // transform: translate3d(0,-226px,0);
+  }
+  @include styles.sm {
+    background: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(10px);
+    border-radius: 0 0 0.75rem 0.75rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    flex-direction: row;
+    justify-content: center;
+    align-items: space-between;
+  }
+}
+
+.list-item {
+  padding: 1rem;
+  text-shadow: 0 0 1px black;
+}
+
+.navbar-link {
+  font-family: styles.$fontFancy;
+  color: styles.$colorDark;
+  font-size: 1.5rem;
+  &:hover {
+    color: styles.$colorMid;
+  }
+}
+
+#dd-button {
+  @include styles.xs {
+    position: fixed;
+    top: 0;
+    width: auto;
+    height: auto;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    padding: 0 0.5rem 0.5rem 1rem;
+    font-size: 2rem;
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(10px);
+    border-radius: 0 0 0.75rem 0.75rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-top: 0;
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+  }
+  @include styles.sm {
+    display: none;
+  }
+}

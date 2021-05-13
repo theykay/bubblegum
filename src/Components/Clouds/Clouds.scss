@@ -1,0 +1,19 @@
+@use '../../styles/main' as styles;
+
+#cloud-background {
+  width: 100vw;
+  height: auto;
+  position: absolute;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index:-1;
+}
+
+.color-light {
+  fill: styles.$colorLight;
+}
+
+.color-dark {
+  fill: styles.$colorMLight;
+}

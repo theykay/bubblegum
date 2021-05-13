@@ -1,1 +1,83 @@
-@import '../../styles/main';
+@use '../../styles/main' as styles;
+
+#onepage-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: auto;
+  height: auto;
+  margin: 1rem;
+  overflow-y: scroll;
+  @include styles.xs {
+    margin-top: 3rem;
+    margin-bottom: 2.5rem;
+    // margin-top: 0;
+  }
+  @include styles.sm {
+    margin-top: 3.25rem;
+  }
+}
+
+.glass-card {
+  box-sizing: border-box;
+  position: relative;
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(10px);
+  border-radius: 0.75rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+  // margin: 2rem;
+  padding: 1rem;
+  flex-grow: 1;
+  width: 100%;
+  margin: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  // @include styles.xs {
+  // }
+  @include styles.sm {
+    padding: 1rem;
+  }
+  @include styles.md {
+    
+  }
+}
+
+.glass-card-head {
+  padding-bottom: 1rem;
+  & h2 {
+    font-family: styles.$fontFancy;
+    font-size: 2rem;
+    color: styles.$colorDark;
+    line-height: 1;
+    margin: 0;
+  }
+}
+
+.glass-card-content {
+  font-family: styles.$fontContent;
+  font-size: 1rem;
+  color: styles.$colorDark;
+  margin: 0;
+  padding: 0 1rem;
+  line-height: 1.5;
+  & p {
+    padding: 0;
+    margin: 0;
+  }
+  @include styles.xs {
+  }
+  @include styles.sm {
+  }
+  @include styles.md {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    // justify-content: space-between;
+    align-items: center;
+  }
+}

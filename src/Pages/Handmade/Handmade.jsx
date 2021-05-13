@@ -6,6 +6,9 @@ import './Handmade.scss';
 const Handmade = () => {
   return (
     <>
+    <div id="handmade">
+      <h1>hellloooooooo</h1>
+    </div>
       Handmade
       {/* <Header />
       <Footer /> */}
