@@ -12,6 +12,7 @@
   overflow-y: scroll;
   @include styles.xs {
     margin-top: 3rem;
+    margin-bottom: 2.5rem;
     // margin-top: 0;
   }
   @include styles.sm {
