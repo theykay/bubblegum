@@ -1,7 +1,7 @@
 {
   "name": "bubblegum",
   "version": "0.1.0",
-  "homepage": "https://theykay.github.io/bubblegum",
+  "homepage": "",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.35",
