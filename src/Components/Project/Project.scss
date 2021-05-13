@@ -133,3 +133,9 @@
   border-radius: .5rem;
   margin-right: auto;
 }
+
+.hideable {
+  @include styles.xs {
+    display: none;
+  }
+}

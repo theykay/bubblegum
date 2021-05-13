@@ -19,7 +19,13 @@ const Project = (props) => {
   // const [show, setShow] = useState(false);
 
   useEffect(() => {
-    setModalRoot(document.getElementById('modal-root'))
+    setModalRoot(document.getElementById('modal-root'));
+    // const hideables = document.getElementsByClassName('hideable');
+    // for (let item of hideables) {
+    //   if (window.innerWidth>575) {
+    //     item.classList.toggle('reveal');
+    //   }
+    // }
   }, [])
 
   const hideModal = () => {
@@ -38,9 +44,11 @@ const Project = (props) => {
     <>
       {/* <Modal handleClose={hideModal} props={props} /> */}
       <article className="project-card" onClick={showModal}>
-        <img className="card-image" src={props.image} alt={props.title} />
-        <section className='card-text'>
+        <header className="project-card-title hideable">
           <h3>{props.title}</h3>
+        </header>
+        <img className="card-image" src={props.image} alt={props.title} />
+        <section className='card-text hideable'>
           <p>{props.info}</p>
           <ul className="card-media-list">languages/tools:
             {props.media.map((medium, index) => {
