@@ -67,25 +67,28 @@
   @include styles.xs {
   }
   @include styles.sm {
-    padding: 0.75rem;
+    padding: 0;
+    display: inline-block;
     &:hover {
       // color: styles.$colorMid;
       // text-decoration: underline;
-      background: rgba(0,0,0,0.05);
-      overflow: hidden;
+      background: rgba(0, 0, 0, 0.05);
+      overflow: visible;
+      & .navbar-link {
+        color: styles.$colorMid;
+      }
     }
   }
 }
 
 .navbar-link {
+  display: inline-block;
   font-family: styles.$fontFancy;
   color: styles.$colorDark;
   font-size: 1.5rem;
   line-height: 1;
   text-decoration: none;
-  &:hover {
-    color: styles.$colorMid;
-  }
+  padding: 0.75rem;
 }
 
 #dd-tag {
