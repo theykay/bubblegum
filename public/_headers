@@ -1,4 +1,4 @@
-/*
+*
   Permissions-Policy: interest-cohort=()
   Content-Security-Policy: default-src 'self'; font-src fonts.gstatic.com; style-src 'self' fonts.googleapis.com 'sha256-UTjtaAWWTyzFjRKbltk24jHijlTbP20C1GUYaWPqg7E='; script-src 'self'; 
   X-Frame-Options: SAMEORIGIN
