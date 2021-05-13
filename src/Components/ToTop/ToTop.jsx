@@ -11,19 +11,23 @@ const ToTop = () => {
     if (window.scrollY > 200) {
       setShowMe(true)
     }
-  }
+  };
+
+  const goUp = () => {
+    window.scrollTo({
+      top: 0
+    });
+  };
 
   useEffect(() => {
     window.addEventListener('scroll', showHide)
-  }, [])
+  }, []);
 
   return (
     <>
       { showMe &&
-        <div id="to-top">
-          <a href="#about">
-            <FontAwesomeIcon id="to-top-icon" icon={faAngleDoubleUp} />
-          </a>
+        <div id="to-top" onClick={goUp}>
+          <FontAwesomeIcon id="to-top-icon" icon={faAngleDoubleUp} />
         </div>
       }
     </>
