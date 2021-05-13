@@ -28,12 +28,16 @@
 
 .show {
   top: 0 !important;
+  & .links-list {
+    @include styles.xs {
+      box-shadow: 0 0 4px 2px rgba(0,0,0,0.4);
+    }
+  }
 }
 
 .links-list {
   display: inline-flex;
   list-style-type: none;
-  
   @include styles.xs {
     background: white;
     flex-direction: column;
@@ -90,11 +94,18 @@
     // background: rgba(255, 255, 255, 0.6);
     // backdrop-filter: blur(10px);
     border-radius: 0 0 0.75rem 0.75rem;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    border-top: 0;
+    box-shadow: 0 -10px 0 0 white, 0 0 4px 2px rgba(0,0,0,0.4);
+    // border: 1px solid rgba(255, 255, 255, 0.2);
+    // border-top: 0;
     // box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
   }
   @include styles.sm {
     display: none;
+  }
+}
+
+#dd-tag:before {
+  @include styles.xs {
+
   }
 }
