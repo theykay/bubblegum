@@ -12,6 +12,7 @@ const Modal = ({ handleClose, props }) => {
         <FontAwesomeIcon className="modal-close" icon={faTimes} onClick={handleClose} />
         <header className="modal-header"><h3>{props.title}</h3></header>
         <section className="modal-content">
+          <img className="modal-img" src={props.image} alt={props.title} />
           <p>{props.info}</p>
           <ul className="modal-media-list">languages/tools:
             {props.media.map((medium, index) => {

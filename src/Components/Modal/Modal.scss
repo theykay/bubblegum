@@ -13,8 +13,8 @@
 
 .modal-close {
   position: absolute;
-  bottom: -2.5rem;
-  left: 50%;
+  top: -2.5rem;
+  right: 0;
   color: styles.$colorLight;
   font-size: 2rem;
   transform: translateX(-50%);
@@ -79,6 +79,14 @@
     color: styles.$colorLight;
     text-shadow: 0 0 1px black;
     text-align: center;
+  }
+}
+
+.modal-img {
+  border-radius: .25rem;
+  @include styles.xs {
+    width: 100%;
+    margin-bottom: 0.75rem;
   }
 }
 
